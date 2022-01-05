@@ -28,9 +28,9 @@ public class LoginController {
 
     private void checkLogin() throws IOException {
         if (username.getText().equals("klijent") && password.getText().equals("123")) {
-            App.getInstance().changeScene("main.fxml");
+            App.getInstance().changeScene("klijent/klijent.fxml");
         }if (username.getText().equals("racunovodja") && password.getText().equals("123")) {
-            App.getInstance().changeScene("racunovodja.fxml");
+            App.getInstance().changeScene("racunovodja/racunovodja.fxml");
         } else if (username.getText().isEmpty() && password.getText().isEmpty()) {
             wrongLogIn.setText("Please enter your data.");
         } else {

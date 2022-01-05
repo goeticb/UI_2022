@@ -10,7 +10,7 @@ import ui.ui2021.App;
 
 import java.io.IOException;
 
-public class MainController {
+public class KlijentController {
 
     @FXML
     private Button btDashboard;
@@ -24,19 +24,19 @@ public class MainController {
     private StackPane contentArea;
 
     public void dashboard(ActionEvent event) throws IOException {
-        changeContent("dashboard.fxml");
+        changeContent("klijent/dashboard.fxml");
     }
 
     public void callingData(ActionEvent event) throws IOException {
-        changeContent("callingData.fxml");
+        changeContent("klijent/callingData.fxml");
     }
 
     public void complains(ActionEvent event) throws IOException {
-        changeContent("complains.fxml");
+        changeContent("klijent/complains.fxml");
     }
 
     public void accounts(ActionEvent event) throws IOException {
-        changeContent("accounts.fxml");
+        changeContent("klijent/accounts.fxml");
     }
 
     public void changeContent(String fxml) throws IOException {
