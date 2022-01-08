@@ -39,6 +39,10 @@ public class KlijentController {
         changeContent("klijent/accounts.fxml");
     }
 
+    public void logOut(ActionEvent event) throws IOException {
+        App.getInstance().changeScene("login.fxml");
+    }
+
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();
