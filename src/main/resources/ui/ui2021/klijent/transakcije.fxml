@@ -4,5 +4,5 @@
 <Pane style="-fx-background-color: #001945;"
       xmlns="http://javafx.com/javafx/17"
       xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="ui.controller.DashboardController">
+      fx:controller="ui.controller.TransakcijeController">
 </Pane>

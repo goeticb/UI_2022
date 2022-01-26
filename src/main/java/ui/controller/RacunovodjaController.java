@@ -43,4 +43,6 @@ public class RacunovodjaController {
     }
 
 
+    public void Izvestaji(ActionEvent actionEvent) {
+    }
 }

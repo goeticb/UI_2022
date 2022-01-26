@@ -34,7 +34,7 @@
                                 <Insets bottom="60.0" left="20.0" right="20.0" top="10.0" />
                             </VBox.margin>
                         </Label>
-                        <Button fx:id="btDashboard" contentDisplay="CENTER" mnemonicParsing="false" onAction="#dashboard" style="-fx-background-color: transparent;" text="Dashboard" textAlignment="CENTER" textFill="WHITE">
+                        <Button fx:id="btTranskacije" contentDisplay="CENTER" mnemonicParsing="false" onAction="#transkacije" style="-fx-background-color: transparent;" text="Transakcije" textAlignment="CENTER" textFill="WHITE">
                             <font>
                                 <Font name="AppleGothic Regular" size="20.0" />
                             </font>
@@ -42,7 +42,7 @@
                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                             </VBox.margin>
                         </Button>
-                        <Button fx:id="btCallingData" contentDisplay="CENTER" mnemonicParsing="false" onAction="#callingData" style="-fx-background-color: transparent;" text="Calling Data" textAlignment="CENTER" textFill="WHITE">
+                        <Button fx:id="btFaktura" contentDisplay="CENTER" mnemonicParsing="false" onAction="#faktura" style="-fx-background-color: transparent;" text="Fakture" textAlignment="CENTER" textFill="WHITE">
                             <font>
                                 <Font name="AppleGothic Regular" size="20.0" />
                             </font>
@@ -50,7 +50,7 @@
                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                             </VBox.margin>
                         </Button>
-                        <Button fx:id="btComplains" contentDisplay="CENTER" mnemonicParsing="false" onAction="#complains" style="-fx-background-color: transparent;" text="Complains" textAlignment="CENTER" textFill="WHITE">
+                        <Button fx:id="btZaposleni" contentDisplay="CENTER" mnemonicParsing="false" onAction="#zaposleni" style="-fx-background-color: transparent;" text="Zaposleni" textAlignment="CENTER" textFill="WHITE">
                             <VBox.margin>
                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                             </VBox.margin>
@@ -58,7 +58,7 @@
                                 <Font name="AppleGothic Regular" size="20.0" />
                             </font>
                         </Button>
-                        <Button fx:id="btAccounts" contentDisplay="CENTER" mnemonicParsing="false" onAction="#accounts" style="-fx-background-color: transparent;" text="Accounts" textAlignment="CENTER" textFill="WHITE">
+                        <Button fx:id="btRacun" contentDisplay="CENTER" mnemonicParsing="false" onAction="#racun" style="-fx-background-color: transparent;" text="Račun" textAlignment="CENTER" textFill="WHITE">
                             <font>
                                 <Font name="AppleGothic Regular" size="20.0" />
                             </font>

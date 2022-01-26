@@ -23,20 +23,20 @@ public class KlijentController {
     @FXML
     private StackPane contentArea;
 
-    public void dashboard(ActionEvent event) throws IOException {
-        changeContent("klijent/dashboard.fxml");
+    public void transkacije(ActionEvent event) throws IOException {
+        changeContent("klijent/transakcije.fxml");
     }
 
-    public void callingData(ActionEvent event) throws IOException {
-        changeContent("klijent/callingData.fxml");
+    public void faktura(ActionEvent event) throws IOException {
+        changeContent("klijent/fakture.fxml");
     }
 
-    public void complains(ActionEvent event) throws IOException {
-        changeContent("klijent/complains.fxml");
+    public void zaposleni(ActionEvent event) throws IOException {
+        changeContent("klijent/zaposleni.fxml");
     }
 
-    public void accounts(ActionEvent event) throws IOException {
-        changeContent("klijent/accounts.fxml");
+    public void racun(ActionEvent event) throws IOException {
+        changeContent("klijent/racun.fxml");
     }
 
     public void logOut(ActionEvent event) throws IOException {
