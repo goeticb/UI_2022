@@ -12,8 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #001945;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.TransakcijeController">
+<Pane fx:id="idPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #001945;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.TransakcijeController">
    <children>
       <VBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0">
          <children>
@@ -23,16 +22,17 @@
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+                     </font>
                   </Button>
-                  <Button mnemonicParsing="false" text="Beležnik">
-                     <HBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button mnemonicParsing="false" text="Faktura">
+                  <Button fx:id="btBeleznik" alignment="CENTER" mnemonicParsing="false" onAction="#beleznik" text="Beležnik" textAlignment="CENTER">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+                     </font>
                   </Button>
                </children>
                <opaqueInsets>
