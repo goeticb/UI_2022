@@ -26,7 +26,7 @@
                         <Image url="@../images/p.jpg" />
                      </image>
                   </ImageView>
-                  <Label text="racunovodja_name" textFill="WHITE">
+                  <Label prefHeight="30.0" prefWidth="176.0" text="racunovodja_name" textFill="WHITE">
                      <font>
                         <Font name="AppleGothic Regular" size="20.0" />
                      </font>
@@ -86,9 +86,9 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <StackPane fx:id="contentAreaRacunovodja" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <StackPane fx:id="contentAreaRacunovodja" style="-fx-background-color: #004455;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label text="WELCOME!" textAlignment="CENTER">
+                        <Label prefHeight="87.0" prefWidth="151.0" text="WELCOME!" textAlignment="CENTER" textFill="WHITE">
                            <font>
                               <Font name="AppleGothic Regular" size="30.0" />
                            </font>

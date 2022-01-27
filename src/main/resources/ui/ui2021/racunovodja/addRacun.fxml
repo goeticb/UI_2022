@@ -9,78 +9,51 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="idAddRacunPane" fx:controller="ui.controller.AddRacunController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="idAddRacunPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.AddRacunController">
    <children>
-      <HBox layoutX="37.0" layoutY="62.0" prefHeight="304.0" prefWidth="526.0">
+      <HBox layoutX="37.0" layoutY="62.0" prefHeight="250.0" prefWidth="526.0">
          <children>
-            <VBox prefHeight="304.0" prefWidth="98.0">
+            <VBox prefHeight="304.0" prefWidth="133.0">
                <children>
-                  <Label text="Label">
+                  <Label text="Broj Racuna:" textFill="WHITE">
                      <VBox.margin>
                         <Insets bottom="25.0" left="15.0" right="15.0" top="25.0" />
                      </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
                   </Label>
-                  <Label text="Label">
+                  <Label text="Ime Banke:" textFill="WHITE">
                      <VBox.margin>
-                        <Insets bottom="25.0" left="15.0" right="15.0" top="35.0" />
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="35.0" />
                      </VBox.margin>
-                  </Label>
-                  <Label text="Label">
-                     <VBox.margin>
-                        <Insets bottom="25.0" left="15.0" right="15.0" top="35.0" />
-                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
                   </Label>
                </children>
             </VBox>
-            <VBox prefHeight="304.0" prefWidth="151.0">
+            <VBox prefHeight="304.0" prefWidth="338.0">
                <children>
                   <TextField prefHeight="26.0" prefWidth="165.0">
                      <VBox.margin>
-                        <Insets bottom="25.0" left="15.0" right="15.0" top="25.0" />
+                        <Insets bottom="25.0" left="30.0" right="30.0" top="25.0" />
                      </VBox.margin>
                   </TextField>
                   <TextField>
                      <VBox.margin>
-                        <Insets bottom="25.0" left="15.0" right="15.0" top="25.0" />
-                     </VBox.margin>
-                  </TextField>
-                  <TextField prefHeight="26.0" prefWidth="123.0">
-                     <VBox.margin>
-                        <Insets bottom="25.0" left="15.0" right="15.0" top="25.0" />
-                     </VBox.margin>
-                  </TextField>
-                  <Button fx:id="btSaveRacun" mnemonicParsing="false" onAction="#saveRacun" text="Save">
-                     <VBox.margin>
-                        <Insets bottom="25.0" top="25.0" />
-                     </VBox.margin>
-                  </Button>
-               </children>
-            </VBox>
-            <VBox prefHeight="304.0" prefWidth="294.0">
-               <children>
-                  <TextField>
-                     <VBox.margin>
-                        <Insets bottom="25.0" left="15.0" right="15.0" top="25.0" />
-                     </VBox.margin>
-                  </TextField>
-                  <TextField>
-                     <VBox.margin>
-                        <Insets bottom="25.0" left="15.0" right="15.0" top="25.0" />
-                     </VBox.margin>
-                  </TextField>
-                  <TextField>
-                     <VBox.margin>
-                        <Insets bottom="25.0" left="15.0" right="15.0" top="25.0" />
+                        <Insets bottom="25.0" left="30.0" right="30.0" top="25.0" />
                      </VBox.margin>
                   </TextField>
                </children>
             </VBox>
          </children>
       </HBox>
-      <Label layoutX="23.0" layoutY="23.0" text="Enter details">
+      <Label layoutX="23.0" layoutY="23.0" text="Enter details" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
+      <Button fx:id="btSaveRacun" layoutX="55.0" layoutY="300.0" mnemonicParsing="false" onAction="#saveRacun" text="Save" />
    </children>
 </Pane>
