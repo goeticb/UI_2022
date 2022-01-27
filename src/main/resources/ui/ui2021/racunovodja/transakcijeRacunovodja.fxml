@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="idTransakcijeRacunovodjaPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #001945;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.TransakcijeRacunovodjaController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="TOP_RIGHT" minHeight="50.0" minWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" text="Izmeni transakcije" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Beležnik">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Faktura">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox fx:id="dpDo" minHeight="50.0" minWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" text="Banka: " textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cbBanka" prefWidth="100.0">
+                     <HBox.margin>
+                        <Insets right="15.0" top="5.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <Label alignment="CENTER" text="Od: " textAlignment="CENTER" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dpOd" maxWidth="100.0">
+                     <HBox.margin>
+                        <Insets right="15.0" top="5.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <Label alignment="CENTER" text="Do:" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <DatePicker maxWidth="100.0">
+                     <HBox.margin>
+                        <Insets right="15.0" top="5.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <Button fx:id="btPretrazi" maxHeight="27.0" mnemonicParsing="false" text="Pretraži" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="20.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <TreeTableView>
+               <columns>
+                  <TreeTableColumn prefWidth="95.0" text="ID Transakcije" />
+                  <TreeTableColumn prefWidth="60.0" text="Tip" />
+                  <TreeTableColumn text="Datum" />
+                  <TreeTableColumn text="Klijent" />
+                  <TreeTableColumn text="Artikal" />
+                  <TreeTableColumn text="Količina" />
+                  <TreeTableColumn text="Suma" />
+               </columns>
+            </TreeTableView>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

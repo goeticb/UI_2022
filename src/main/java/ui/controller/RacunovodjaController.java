@@ -20,12 +20,15 @@ public class RacunovodjaController {
     private StackPane contentAreaRacunovodja;
 
     public Button btRacun;
+    @FXML
+    private Button btTranskacije;
 
 
 
 
 
-    public void transkacije(ActionEvent actionEvent) {
+    public void transkacije(ActionEvent actionEvent) throws IOException {
+        changeContent("racunovodja/transakcijeRacunovodja.fxml");
     }
 
     public void faktura(ActionEvent actionEvent) {
