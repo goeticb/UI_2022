@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 
-<Pane fx:id="idRacunRacunovodja" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.AccountsController">
+<Pane fx:id="idRacunRacunovodja" prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.RacunRacunovodjaController">
    <children>
-      <TreeTableView layoutX="6.0" layoutY="92.0" prefHeight="403.0" prefWidth="578.0">
+      <TreeTableView layoutX="6.0" layoutY="92.0" prefHeight="238.0" prefWidth="578.0">
          <columns>
             <TreeTableColumn maxWidth="157.60003662109375" minWidth="-Infinity" prefWidth="157.60003662109375" text="ID" />
             <TreeTableColumn minWidth="0.0" prefWidth="209.5999755859375" text="Broj Računa" />
@@ -70,5 +70,9 @@
             <Insets top="30.0" />
          </padding>
       </StackPane>
+      <Button fx:id="btPozajmicaRacunovodja" layoutX="14.0" layoutY="453.0" mnemonicParsing="false" onAction="#pozajmica" text="Pozajmica" />
+      <Button fx:id="btAddRacun" layoutX="97.0" layoutY="453.0" mnemonicParsing="false" onAction="#addRacun" text="Add Racun" />
+      <Button fx:id="btIzmeniRacun" layoutX="181.0" layoutY="453.0" mnemonicParsing="false" onAction="#izmeniRacun" text="Izmeni" />
+      <Button fx:id="btDeleteRacun" layoutX="244.0" layoutY="453.0" mnemonicParsing="false" onAction="#deleteRacun" text="Delete" />
    </children>
 </Pane>

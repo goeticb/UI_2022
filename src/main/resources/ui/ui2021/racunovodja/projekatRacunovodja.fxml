@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 
-<Pane prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="idProjekatPane" prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.ProjekatController">
    <children>
       <TreeTableView layoutX="7.0" layoutY="123.0" prefHeight="241.0" prefWidth="587.0">
          <columns>
@@ -68,5 +68,8 @@
             <Insets top="30.0" />
          </padding>
       </StackPane>
+      <Button fx:id="btAddProjekat" layoutX="14.0" layoutY="461.0" mnemonicParsing="false" onAction="#addProjekat" text="Add Projekat" />
+      <Button fx:id="btIzmeniProjekat" layoutX="113.0" layoutY="461.0" mnemonicParsing="false" onAction="#izmeniProjekat" text="Izmeni" />
+      <Button fx:id="btDeleteProjekat" layoutX="178.0" layoutY="461.0" mnemonicParsing="false" onAction="#deleteProjekat" text="Delete" />
    </children>
 </Pane>

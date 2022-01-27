@@ -9,17 +9,15 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 
-<Pane fx:id="idZaposneliPaneRacunovodja" prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.ZaposleniRacunovodjaController">
+<Pane fx:id="idRacunRacunovodja" prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.PozajmicaController">
    <children>
-      <TreeTableView layoutX="6.0" layoutY="92.0" prefHeight="335.0" prefWidth="586.0">
+      <TreeTableView layoutX="6.0" layoutY="92.0" prefHeight="282.0" prefWidth="578.0">
          <columns>
-            <TreeTableColumn maxWidth="157.60003662109375" minWidth="-Infinity" prefWidth="85.60003662109375" text="ID" />
-            <TreeTableColumn minWidth="0.0" prefWidth="74.39996337890625" text="Ime" />
-            <TreeTableColumn minWidth="0.0" prefWidth="52.80010986328125" text="Prezime" />
-            <TreeTableColumn prefWidth="75.0" text="jmbg" />
-            <TreeTableColumn prefWidth="75.0" text="datumRodjenja" />
-            <TreeTableColumn prefWidth="75.0" text="kontakt" />
-            <TreeTableColumn prefWidth="75.0" text="email" />
+            <TreeTableColumn maxWidth="157.60003662109375" minWidth="-Infinity" prefWidth="73.5999755859375" text="ID" />
+            <TreeTableColumn prefWidth="75.0" text="principal" />
+            <TreeTableColumn prefWidth="118.40008544921875" text="interest" />
+            <TreeTableColumn prefWidth="96.0" text="datum" />
+            <TreeTableColumn prefWidth="99.19989013671875" text="opis" />
          </columns>
          <opaqueInsets>
             <Insets />
@@ -74,10 +72,8 @@
             <Insets top="30.0" />
          </padding>
       </StackPane>
-      <Button fx:id="btTipRacunovodja" layoutX="14.0" layoutY="461.0" mnemonicParsing="false" onAction="#tip" text="Tip" />
-      <Button fx:id="btProjekatRacunovodja" layoutX="58.0" layoutY="461.0" mnemonicParsing="false" onAction="#projekat" text="Projekat" />
-      <Button fx:id="btAddZaposleni" layoutX="132.0" layoutY="461.0" mnemonicParsing="false" onAction="#addZaposleni" text="Add Zaposleni" />
-      <Button fx:id="btDeleteZaposleni" layoutX="235.0" layoutY="461.0" mnemonicParsing="false" onAction="#deleteZaposleni" text="Delete" />
-      <Button fx:id="btIzmeniZaposleni" layoutX="296.0" layoutY="461.0" mnemonicParsing="false" onAction="#izmeniZaposleni" text="Izmeni" />
+      <Button fx:id="btAddPozajmica" layoutX="14.0" layoutY="454.0" mnemonicParsing="false" onAction="#addPozajmica" text="Add Pozajmica" />
+      <Button fx:id="btIzmeniPozajmica" layoutX="126.0" layoutY="454.0" mnemonicParsing="false" onAction="#izmeniPozajmica" text="Izmeni" />
+      <Button fx:id="btDeletePozajmica" layoutX="194.0" layoutY="454.0" mnemonicParsing="false" onAction="#deletePozajmica" text="Delete" />
    </children>
 </Pane>

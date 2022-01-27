@@ -11,42 +11,40 @@ import ui.ui2021.App;
 import java.awt.*;
 import java.io.IOException;
 
-public class RacunRacunovodjaController {
+public class PozajmicaController {
 
 
     @FXML
     private Pane idRacunRacunovodja;
 
     @FXML
-    private Button btPozajmicaRacunovodja;
+    private Button btAddPozajmica;
 
     @FXML
-    private Button btAddRacun;
+    private Button btIzmeniPozajmica;
+
     @FXML
-    private  Button btIzmeniRacun;
-    @FXML
-    private Button btDeleteRacun;
+    private Button btDeletePozajmica;
 
-    public void pozajmica(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/pozajmica.fxml");
-    }
-    public void addRacun(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/addRacun.fxml");
+
+
+    public void addPozajmica(ActionEvent actionEvent) throws IOException {
+        changeContent("racunovodja/addPozajmica.fxml");
     }
 
-    public void izmeniRacun(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/izmeniRacun.fxml");
+    public void izmeniPozajmica(ActionEvent actionEvent) throws IOException {
+        changeContent("racunovodja/izmeniPozajmica.fxml");
     }
 
-    public void deleteRacun(ActionEvent actionEvent) {
+    public void deletePozajmica(ActionEvent actionEvent) {
     }
+
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();
         idRacunRacunovodja.getChildren().removeAll();
         idRacunRacunovodja.getChildren().addAll((root));
     }
-
 
 
 }

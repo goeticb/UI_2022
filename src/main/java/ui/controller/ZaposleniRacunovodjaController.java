@@ -23,6 +23,15 @@ public class ZaposleniRacunovodjaController {
     @FXML
     private Button btProjekatRacunovodja;
 
+    @FXML
+    private Button btAddZaposleni;
+
+    @FXML
+    private Button btIzmeniZaposleni;
+
+    @FXML
+    private Button btDeleteZaposleni;
+
 
 
 
@@ -32,6 +41,16 @@ public class ZaposleniRacunovodjaController {
 
     public void projekat(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/projekatRacunovodja.fxml");
+    }
+    public void addZaposleni(ActionEvent actionEvent) throws IOException {
+        changeContent("racunovodja/addZaposleni.fxml");
+    }
+
+    public void deleteZaposleni(ActionEvent actionEvent) {
+    }
+
+    public void izmeniZaposleni(ActionEvent actionEvent) throws IOException {
+        changeContent("racunovodja/izmeniZaposleni.fxml");
     }
 
     public void logOut(ActionEvent actionEvent) throws IOException {
@@ -44,4 +63,7 @@ public class ZaposleniRacunovodjaController {
         idZaposneliPaneRacunovodja.getChildren().removeAll();
         idZaposneliPaneRacunovodja.getChildren().addAll((root));
     }
+
+
+
 }
