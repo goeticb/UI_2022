@@ -13,13 +13,13 @@ import java.io.IOException;
 public class KlijentController {
 
     @FXML
-    private Button btDashboard;
+    private Button btTranskacije;
     @FXML
-    private Button btCallingData;
+    private Button btFaktura;
     @FXML
-    private Button btComplains;
+    private Button btZaposleni;
     @FXML
-    private Button btAccounts;
+    private Button btRacun;
     @FXML
     private StackPane contentArea;
 

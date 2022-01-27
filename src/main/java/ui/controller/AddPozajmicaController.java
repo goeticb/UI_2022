@@ -19,7 +19,7 @@ public class AddPozajmicaController {
     private Button btSavePozajmica;
 
     public void savePozajmica(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/pozajmica.fxml");
+        changeContent("racunovodja/pozajmicaRacunovodja.fxml");
     }
 
 

@@ -10,25 +10,26 @@ import ui.ui2021.App;
 
 import java.io.IOException;
 
-public class IzmeniPozajmicaController {
+public class RacunController {
 
     @FXML
-    private Pane idIzmeniPozajmicaPane;
-
-
+    private Pane idRacunPane;
     @FXML
-    private Button btSavePozajmica;
+    private Button btPozajmica;
 
 
 
-    public void savePozajmica(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/pozajmicaRacunovodja.fxml");
+
+
+    public void pozajmica(ActionEvent actionEvent) throws IOException {
+        changeContent("klijent/pozajmica.fxml");
     }
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();
-        idIzmeniPozajmicaPane.getChildren().removeAll();
-        idIzmeniPozajmicaPane.getChildren().addAll((root));
+        idRacunPane.getChildren().removeAll();
+        idRacunPane.getChildren().addAll((root));
     }
+
 
 }

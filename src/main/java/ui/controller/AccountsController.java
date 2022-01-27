@@ -26,6 +26,8 @@ public class AccountsController {
 
 
 
+
+
     public void back(ActionEvent actionEvent) throws IOException {
         changeContent("klijent/klijent.fxml");
     }
@@ -37,12 +39,14 @@ public class AccountsController {
         changeContent("klijent/projekat.fxml");
     }
 
+
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();
         idPane.getChildren().removeAll();
         idPane.getChildren().addAll((root));
     }
+
 
 
 }
