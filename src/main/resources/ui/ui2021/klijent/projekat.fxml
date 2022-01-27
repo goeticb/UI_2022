@@ -2,16 +2,17 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.TreeTableColumn?>
 <?import javafx.scene.control.TreeTableView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 
-<Pane prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Pane prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <TreeTableView layoutX="7.0" layoutY="123.0" prefHeight="241.0" prefWidth="587.0">
+        <TreeTableView layoutX="7.0" layoutY="123.0" prefHeight="366.0" prefWidth="585.0">
             <columns>
                 <TreeTableColumn maxWidth="198.4000244140625" minWidth="-Infinity" prefWidth="48.00006103515625" text="ID" />
                 <TreeTableColumn minWidth="0.0" prefWidth="51.2000732421875" text="naziv" />
@@ -28,29 +29,26 @@
          <children>
             <HBox prefHeight="65.0" prefWidth="551.0">
                <children>
-                  <TextField prefHeight="26.0" prefWidth="80.0">
+                  <ComboBox prefHeight="26.0" prefWidth="114.0" promptText="ID">
                      <HBox.margin>
                         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </HBox.margin>
-                  </TextField>
-                  <TextField prefHeight="26.0" prefWidth="80.0">
+                  </ComboBox>
+                  <ComboBox prefWidth="150.0" promptText="Naziv">
                      <HBox.margin>
                         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </HBox.margin>
-                  </TextField>
-                  <TextField prefHeight="26.0" prefWidth="80.0">
+                  </ComboBox>
+                  <DatePicker prefHeight="26.0" prefWidth="118.0" promptText="Od">
                      <HBox.margin>
                         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </HBox.margin>
-                  </TextField>
-                  <TextField prefHeight="26.0" prefWidth="80.0">
+                  </DatePicker>
+                  <DatePicker prefHeight="26.0" prefWidth="104.0" promptText="Do">
                      <HBox.margin>
                         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
-                     </HBox.margin></TextField>
-                  <TextField prefHeight="26.0" prefWidth="80.0">
-                     <HBox.margin>
-                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
-                     </HBox.margin></TextField>
+                     </HBox.margin>
+                  </DatePicker>
                   <Button mnemonicParsing="false" prefHeight="11.0" prefWidth="64.0" text="Search">
                      <HBox.margin>
                         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />

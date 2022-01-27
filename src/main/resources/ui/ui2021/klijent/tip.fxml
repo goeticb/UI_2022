@@ -2,16 +2,16 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TreeTableColumn?>
 <?import javafx.scene.control.TreeTableView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 
-<Pane fx:id="btTip" prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="btTip" prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TreeTableView layoutX="7.0" layoutY="110.0" prefHeight="232.0" prefWidth="580.0">
+      <TreeTableView layoutX="7.0" layoutY="110.0" prefHeight="366.0" prefWidth="580.0">
          <columns>
             <TreeTableColumn maxWidth="198.4000244140625" minWidth="-Infinity" prefWidth="192.79998779296875" text="ID" />
             <TreeTableColumn minWidth="0.0" prefWidth="205.60003662109375" text="opis" />
@@ -25,24 +25,19 @@
          <children>
             <HBox prefHeight="64.0" prefWidth="607.0">
                <children>
-                  <TextField prefHeight="33.0" prefWidth="136.0">
+                  <ComboBox prefWidth="150.0" promptText="ID">
                      <HBox.margin>
-                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </HBox.margin>
-                  </TextField>
-                  <TextField>
+                  </ComboBox>
+                  <ComboBox prefWidth="150.0" promptText="Zvanje">
                      <HBox.margin>
-                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </HBox.margin>
-                  </TextField>
-                  <TextField>
-                     <HBox.margin>
-                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
-                     </HBox.margin>
-                  </TextField>
+                  </ComboBox>
                   <Button mnemonicParsing="false" prefHeight="11.0" prefWidth="64.0" text="Search">
                      <HBox.margin>
-                        <Insets bottom="15.0" left="15.0" right="15.0" top="24.0" />
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </HBox.margin>
                   </Button>
                </children>
