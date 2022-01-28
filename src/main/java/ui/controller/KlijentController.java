@@ -28,7 +28,7 @@ public class KlijentController {
     }
 
     public void faktura(ActionEvent event) throws IOException {
-        changeContent("klijent/fakture.fxml");
+        changeContent("klijent/faktura.fxml");
     }
 
     public void zaposleni(ActionEvent event) throws IOException {
