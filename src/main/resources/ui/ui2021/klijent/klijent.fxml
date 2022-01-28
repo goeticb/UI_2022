@@ -16,7 +16,7 @@
     <children>
         <BorderPane prefHeight="500.0" prefWidth="800.0">
             <left>
-                <VBox alignment="CENTER" prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #004455;" BorderPane.alignment="CENTER">
+                <VBox alignment="CENTER" prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #00bfac#00afaa;" BorderPane.alignment="CENTER">
                     <children>
                         <ImageView fitHeight="70.0" fitWidth="70.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                             <VBox.margin>
