@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane fx:id="idBeleynikracunovodjaPane" fx:controller="ui.controller.BeleznikRacunovodjaController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #004455#004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0">
+         <children>
+            <TreeTableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="580.0">
+               <columns>
+                  <TreeTableColumn text="ID Beleznika" />
+                  <TreeTableColumn text="Datum" />
+                  <TreeTableColumn text="Debit" />
+                  <TreeTableColumn text="Credit" />
+                  <TreeTableColumn text="Balans" />
+                  <TreeTableColumn text="Prihodi" />
+                  <TreeTableColumn text="Rashodi" />
+               </columns>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TreeTableView>
+         </children>
+      </VBox>
+   </children>
+</Pane>

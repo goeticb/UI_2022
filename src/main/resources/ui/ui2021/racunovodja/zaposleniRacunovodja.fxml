@@ -60,7 +60,7 @@
                         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </HBox.margin>
                   </ComboBox>
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="Search">
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="Pretraži">
                      <HBox.margin>
                         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </HBox.margin>
@@ -77,8 +77,8 @@
       </StackPane>
       <Button fx:id="btTipRacunovodja" layoutX="16.0" layoutY="449.0" mnemonicParsing="false" onAction="#tip" text="Tip" />
       <Button fx:id="btProjekatRacunovodja" layoutX="16.0" layoutY="418.0" mnemonicParsing="false" onAction="#projekat" text="Projekat" />
-      <Button fx:id="btAddZaposleni" layoutX="494.0" layoutY="418.0" mnemonicParsing="false" onAction="#addZaposleni" text="Add Zaposleni" />
-      <Button fx:id="btDeleteZaposleni" layoutX="494.0" layoutY="485.0" mnemonicParsing="false" onAction="#deleteZaposleni" prefHeight="26.0" prefWidth="50.0" text="Delete" />
-      <Button fx:id="btIzmeniZaposleni" layoutX="494.0" layoutY="449.0" mnemonicParsing="false" onAction="#izmeniZaposleni" prefHeight="15.0" prefWidth="51.0" text="Izmeni" />
+      <Button fx:id="btAddZaposleni" layoutX="474.0" layoutY="418.0" mnemonicParsing="false" onAction="#addZaposleni" text="Dodaj zaposlenog" />
+      <Button fx:id="btDeleteZaposleni" layoutX="476.0" layoutY="485.0" mnemonicParsing="false" onAction="#deleteZaposleni" prefHeight="26.0" prefWidth="112.0" text="Obriši zaposlenog" />
+      <Button fx:id="btIzmeniZaposleni" layoutX="474.0" layoutY="449.0" mnemonicParsing="false" onAction="#izmeniZaposleni" prefHeight="25.0" prefWidth="120.0" text="Izmeni zaposlenog" />
    </children>
 </Pane>

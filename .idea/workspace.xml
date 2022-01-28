@@ -23,30 +23,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc1b07d6-8695-43bf-b20d-81d208e53f3d" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AddArtikalracunovodjaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AddDobavljacRacunovodjaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AddFakturaRacunovodjaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AddKupacRacunovodjaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AddPdvRacunovodjaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/FakturaRacunovodjaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/IzmeniArtikalracunovodjaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/IzmeniDobavljacRacunovodjaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/IzmeniFakturuRacunovodjaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/IzmeniKupacRacunovodjaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/IzmeniPdvRacunovodjaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/addArtikalracunovodja.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/addDobavljacRacunovodja.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/addFakturaRacunovodja.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/addKupacRacunovodja.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/addPdvRacunovodja.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/fakturaRacunovodja.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/izmeniArtikalracunovodja.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/izmeniDobavljacRacunovodja.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/izmeniFakturuRacunovodja.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/izmeniKupacRacunovodja.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/izmeniPdvRacunovodja.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/RacunovodjaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/RacunovodjaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/BeleznikRacunovodjaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/beleznikRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/AddPdvRacunovodjaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AddPdvRacunovodjaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/AddZaposleniController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AddZaposleniController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/IzmeniPdvRacunovodjaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/IzmeniPdvRacunovodjaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/TransakcijeRacunovodjaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/TransakcijeRacunovodjaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/klijent/pozajmica.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/klijent/pozajmica.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/klijent/projekat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/klijent/projekat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/klijent/racun.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/klijent/racun.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/klijent/tip.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/klijent/tip.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/klijent/zaposleni.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/klijent/zaposleni.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/addPdvRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/addPdvRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/fakturaRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/fakturaRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/izmeniPdvRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/izmeniPdvRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/pozajmicaRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/pozajmicaRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/projekatRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/projekatRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/racunRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/racunRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/tipRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/tipRacunovodja.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/transakcijeRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/transakcijeRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/zaposleniRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/zaposleniRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/AddZaposleniController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/AddZaposleniController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/controller/TransakcijeRacunovodjaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/controller/TransakcijeRacunovodjaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ui2021/klijent/pozajmica.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ui2021/klijent/pozajmica.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ui2021/klijent/projekat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ui2021/klijent/projekat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ui2021/klijent/racun.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ui2021/klijent/racun.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ui2021/klijent/tip.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ui2021/klijent/tip.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ui2021/klijent/zaposleni.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ui2021/klijent/zaposleni.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ui2021/racunovodja/pozajmicaRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ui2021/racunovodja/pozajmicaRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ui2021/racunovodja/projekatRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ui2021/racunovodja/projekatRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ui2021/racunovodja/racunRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ui2021/racunovodja/racunRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ui2021/racunovodja/tipRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ui2021/racunovodja/tipRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ui2021/racunovodja/transakcijeRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ui2021/racunovodja/transakcijeRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ui2021/racunovodja/zaposleniRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ui2021/racunovodja/zaposleniRacunovodja.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643304480651</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update">
+      <created>1643366715914</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1643366715914</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +239,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1641647135477" />
+    <state x="596" y="99" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1643366548699">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="596" y="99" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643366548699" />
     <state x="473" y="149" key="FileChooserDialogImpl" timestamp="1642002720678">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -230,29 +251,29 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="593" y="310" key="Github.CreateGistDialog/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643361247924" />
-    <state width="1493" height="19" key="GridCell.Tab.0.bottom" timestamp="1643363023940">
+    <state width="1493" height="70" key="GridCell.Tab.0.bottom" timestamp="1643375450542">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1877" height="133" key="GridCell.Tab.0.bottom/-1920.0.1920.1020/0.0.1536.816@-1920.0.1920.1020" timestamp="1641491586481" />
-    <state width="1493" height="19" key="GridCell.Tab.0.bottom/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643363023940" />
+    <state width="1493" height="70" key="GridCell.Tab.0.bottom/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643375450542" />
     <state width="1474" height="19" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1643328587977" />
-    <state width="1493" height="19" key="GridCell.Tab.0.center" timestamp="1643363023940">
+    <state width="1493" height="70" key="GridCell.Tab.0.center" timestamp="1643375450542">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1877" height="133" key="GridCell.Tab.0.center/-1920.0.1920.1020/0.0.1536.816@-1920.0.1920.1020" timestamp="1641491586481" />
-    <state width="1493" height="19" key="GridCell.Tab.0.center/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643363023940" />
+    <state width="1493" height="70" key="GridCell.Tab.0.center/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643375450542" />
     <state width="1474" height="19" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1643328587977" />
-    <state width="1493" height="19" key="GridCell.Tab.0.left" timestamp="1643363023940">
+    <state width="1493" height="70" key="GridCell.Tab.0.left" timestamp="1643375450542">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1877" height="133" key="GridCell.Tab.0.left/-1920.0.1920.1020/0.0.1536.816@-1920.0.1920.1020" timestamp="1641491586481" />
-    <state width="1493" height="19" key="GridCell.Tab.0.left/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643363023940" />
+    <state width="1493" height="70" key="GridCell.Tab.0.left/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643375450542" />
     <state width="1474" height="19" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1643328587976" />
-    <state width="1493" height="19" key="GridCell.Tab.0.right" timestamp="1643363023940">
+    <state width="1493" height="70" key="GridCell.Tab.0.right" timestamp="1643375450542">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1877" height="133" key="GridCell.Tab.0.right/-1920.0.1920.1020/0.0.1536.816@-1920.0.1920.1020" timestamp="1641491586481" />
-    <state width="1493" height="19" key="GridCell.Tab.0.right/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643363023940" />
+    <state width="1493" height="70" key="GridCell.Tab.0.right/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643375450542" />
     <state width="1474" height="19" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1643328587977" />
     <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1643217693152">
       <screen x="0" y="0" width="1536" height="816" />
@@ -274,16 +295,16 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="198" y="0" width="1257" height="816" key="SettingsEditor/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1642011834925" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1643304528667">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1643366717180">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643304528667" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643366717180" />
     <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1643278821190" />
-    <state x="586" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1643366517169">
+    <state x="586" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1643374194218">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="-1187" y="403" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1020/0.0.1536.816@-1920.0.1920.1020" timestamp="1641488371933" />
-    <state x="586" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643366517169" />
+    <state x="586" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643374194218" />
     <state x="586" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.816@0.0.1536.816" timestamp="1643328584487" />
     <state x="360" y="69" key="new project wizard" timestamp="1642002425950">
       <screen x="0" y="0" width="1536" height="816" />

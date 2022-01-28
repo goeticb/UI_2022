@@ -54,6 +54,6 @@
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="btSaveArtikal" layoutX="55.0" layoutY="300.0" mnemonicParsing="false" onAction="#saveArtikal" text="Save" />
+      <Button fx:id="btSavePdv" layoutX="55.0" layoutY="300.0" mnemonicParsing="false" onAction="#savePdv" text="Save" />
    </children>
 </Pane>

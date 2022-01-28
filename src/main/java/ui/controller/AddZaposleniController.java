@@ -30,6 +30,5 @@ public class AddZaposleniController {
         idAddZaposleniPane.getChildren().removeAll();
         idAddZaposleniPane.getChildren().addAll((root));
     }
-    public void addZaposleni(ActionEvent actionEvent) {
-    }
+
 }

@@ -16,9 +16,9 @@ public class IzmeniPdvRacunovodjaController {
     private Pane idIzmeniPdvRacunovodjaPane;
 
     @FXML
-    private Button btSaveArtikal;
+    private Button btSavePdv;
 
-    public void saveArtikal(ActionEvent actionEvent) throws IOException {
+    public void savePdv(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/izmeniFakturuRacunovodja.fxml");
     }
 

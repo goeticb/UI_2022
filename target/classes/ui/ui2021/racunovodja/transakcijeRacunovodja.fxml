@@ -23,7 +23,7 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" text="Beležnik">
+                  <Button fx:id="btBeleznikRacunovodja" mnemonicParsing="false" onAction="#beleznik" text="Beležnik">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" />
                      </HBox.margin>

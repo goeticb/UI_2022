@@ -15,9 +15,9 @@ public class AddPdvRacunovodjaController {
     private Pane idAddPdvRacunovodjaPane;
 
     @FXML
-    private Button btSaveArtikal;
+    private Button btSavePdv;
 
-    public void saveArtikal(ActionEvent actionEvent) throws IOException {
+    public void savePdv(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/addFakturaRacunovodja.fxml");
     }
 

@@ -72,7 +72,7 @@
                         </CheckBox>
                      </children>
                   </VBox>
-                  <Button mnemonicParsing="false" prefHeight="11.0" prefWidth="64.0" text="Search">
+                  <Button mnemonicParsing="false" prefHeight="11.0" prefWidth="64.0" text="Pretraži">
                      <HBox.margin>
                         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </HBox.margin>
@@ -87,8 +87,8 @@
             <Insets top="30.0" />
          </padding>
       </StackPane>
-      <Button fx:id="btAddProjekat" layoutX="14.0" layoutY="378.0" mnemonicParsing="false" onAction="#addProjekat" text="Add Projekat" />
-      <Button fx:id="btIzmeniProjekat" layoutX="14.0" layoutY="412.0" mnemonicParsing="false" onAction="#izmeniProjekat" text="Izmeni" />
-      <Button fx:id="btDeleteProjekat" layoutX="14.0" layoutY="445.0" mnemonicParsing="false" onAction="#deleteProjekat" text="Delete" />
+      <Button fx:id="btAddProjekat" layoutX="14.0" layoutY="378.0" mnemonicParsing="false" onAction="#addProjekat" text="Dodaj projekat" />
+      <Button fx:id="btIzmeniProjekat" layoutX="14.0" layoutY="412.0" mnemonicParsing="false" onAction="#izmeniProjekat" text="Izmeni projekat" />
+      <Button fx:id="btDeleteProjekat" layoutX="14.0" layoutY="445.0" mnemonicParsing="false" onAction="#deleteProjekat" text="Obriši projekat" />
    </children>
 </Pane>

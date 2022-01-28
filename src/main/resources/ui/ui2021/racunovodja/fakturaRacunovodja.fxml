@@ -64,7 +64,7 @@
                         <Insets right="10.0" />
                      </HBox.margin>
                   </DatePicker>
-                  <Button mnemonicParsing="false" text="Search">
+                  <Button mnemonicParsing="false" text="Pretraži">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
