@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc1b07d6-8695-43bf-b20d-81d208e53f3d" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AddArtikalracunovodjaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AddDobavljacRacunovodjaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AddFakturaRacunovodjaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AddKupacRacunovodjaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/AddPdvRacunovodjaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/FakturaRacunovodjaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/IzmeniArtikalracunovodjaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/IzmeniDobavljacRacunovodjaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/IzmeniFakturuRacunovodjaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/IzmeniKupacRacunovodjaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controller/IzmeniPdvRacunovodjaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/addArtikalracunovodja.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/addDobavljacRacunovodja.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/addFakturaRacunovodja.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/addKupacRacunovodja.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/addPdvRacunovodja.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/fakturaRacunovodja.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/izmeniArtikalracunovodja.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/izmeniDobavljacRacunovodja.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/izmeniFakturuRacunovodja.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/izmeniKupacRacunovodja.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/izmeniPdvRacunovodja.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controller/RacunovodjaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controller/RacunovodjaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/transakcijeRacunovodja.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui/ui2021/racunovodja/transakcijeRacunovodja.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="23ILasvntqLqZbuf3sNHZDR26uW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.39310345" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\filip\IdeaProjects\UI_2022\src\main\resources\ui\ui2021\racunovodja" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.ui2021.App" />
+      <module name="UI_2022" />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\filip\OneDrive\Desktop\javafx-sdk-17.0.1\lib --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.ui2021.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc1b07d6-8695-43bf-b20d-81d208e53f3d" name="Default Changelist" comment="" />
+      <created>1641416721387</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641416721387</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Dodat Account.fxml Dash.fxml racunovodja.fxml">
+      <created>1641652535580</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641652535580</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update">
+      <created>1643205500384</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643205500384</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update">
+      <created>1643213811470</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1643213811470</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update">
+      <created>1643217292954</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1643217292954</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update">
+      <created>1643278819907</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643278819907</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update">
+      <created>1643287456477</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643287456477</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update">
+      <created>1643287827000</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1643287827000</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update">
+      <created>1643301613236</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643301613236</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update">
+      <created>1643304480651</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1643304480651</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dodat Account.fxml Dash.fxml racunovodja.fxml" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="569" y="260" key="#Configure_Path_Variables" timestamp="1641416739834">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="569" y="260" key="#Configure_Path_Variables/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1641416739834" />
+    <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642011669543">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1642011669543" />
+    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1641647135477">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1641647135477" />
+    <state x="473" y="149" key="FileChooserDialogImpl" timestamp="1642002720678">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="473" y="149" key="FileChooserDialogImpl/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1642002720678" />
+    <state x="593" y="310" key="Github.CreateGistDialog" timestamp="1643361247924">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="593" y="310" key="Github.CreateGistDialog/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643361247924" />
+    <state width="1493" height="19" key="GridCell.Tab.0.bottom" timestamp="1643363023940">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1877" height="133" key="GridCell.Tab.0.bottom/-1920.0.1920.1020/0.0.1536.816@-1920.0.1920.1020" timestamp="1641491586481" />
+    <state width="1493" height="19" key="GridCell.Tab.0.bottom/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643363023940" />
+    <state width="1474" height="19" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1643328587977" />
+    <state width="1493" height="19" key="GridCell.Tab.0.center" timestamp="1643363023940">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1877" height="133" key="GridCell.Tab.0.center/-1920.0.1920.1020/0.0.1536.816@-1920.0.1920.1020" timestamp="1641491586481" />
+    <state width="1493" height="19" key="GridCell.Tab.0.center/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643363023940" />
+    <state width="1474" height="19" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1643328587977" />
+    <state width="1493" height="19" key="GridCell.Tab.0.left" timestamp="1643363023940">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1877" height="133" key="GridCell.Tab.0.left/-1920.0.1920.1020/0.0.1536.816@-1920.0.1920.1020" timestamp="1641491586481" />
+    <state width="1493" height="19" key="GridCell.Tab.0.left/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643363023940" />
+    <state width="1474" height="19" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1643328587976" />
+    <state width="1493" height="19" key="GridCell.Tab.0.right" timestamp="1643363023940">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1877" height="133" key="GridCell.Tab.0.right/-1920.0.1920.1020/0.0.1536.816@-1920.0.1920.1020" timestamp="1641491586481" />
+    <state width="1493" height="19" key="GridCell.Tab.0.right/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643363023940" />
+    <state width="1474" height="19" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1643328587977" />
+    <state width="1493" height="258" key="GridCell.Tab.1.bottom" timestamp="1643217693152">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="258" key="GridCell.Tab.1.bottom/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643217693152" />
+    <state width="1493" height="258" key="GridCell.Tab.1.center" timestamp="1643217693152">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="258" key="GridCell.Tab.1.center/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643217693152" />
+    <state width="1493" height="258" key="GridCell.Tab.1.left" timestamp="1643217693152">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="258" key="GridCell.Tab.1.left/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643217693152" />
+    <state width="1493" height="258" key="GridCell.Tab.1.right" timestamp="1643217693152">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="258" key="GridCell.Tab.1.right/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643217693152" />
+    <state x="198" y="0" width="1257" height="816" key="SettingsEditor" timestamp="1642011834925">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="198" y="0" width="1257" height="816" key="SettingsEditor/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1642011834925" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1643304528667">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643304528667" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1643278821190" />
+    <state x="586" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1643366517169">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="-1187" y="403" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1020/0.0.1536.816@-1920.0.1920.1020" timestamp="1641488371933" />
+    <state x="586" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643366517169" />
+    <state x="586" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.816@0.0.1536.816" timestamp="1643328584487" />
+    <state x="360" y="69" key="new project wizard" timestamp="1642002425950">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="360" y="69" key="new project wizard/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1642002425950" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1643358540088">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1020/0.0.1536.816@0.0.1536.816" timestamp="1643358540088" />
+  </component>
+</project>

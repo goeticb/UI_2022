@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<Pane fx:id="idRacunRacunovodja" prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.PozajmicaRacunovodjaController">
+   <children>
+      <TreeTableView layoutX="6.0" layoutY="92.0" prefHeight="282.0" prefWidth="586.0">
+         <columns>
+            <TreeTableColumn maxWidth="157.60003662109375" minWidth="-Infinity" prefWidth="73.5999755859375" text="ID" />
+            <TreeTableColumn prefWidth="75.0" text="principal" />
+            <TreeTableColumn prefWidth="118.40008544921875" text="interest" />
+            <TreeTableColumn prefWidth="96.0" text="datum" />
+            <TreeTableColumn prefWidth="99.19989013671875" text="opis" />
+         </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TreeTableView>
+      <StackPane alignment="TOP_LEFT" layoutY="-2.0" prefHeight="94.0" prefWidth="592.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ComboBox prefHeight="26.0" prefWidth="100.0" promptText="ID">
+                     <HBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ComboBox prefHeight="26.0" prefWidth="91.0" promptText="Principal">
+                     <HBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ComboBox prefHeight="26.0" prefWidth="89.0" promptText="Interest">
+                     <HBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <DatePicker prefHeight="26.0" prefWidth="130.0" promptText="Datum">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <ComboBox prefHeight="26.0" prefWidth="90.0" promptText="Opis">
+                     <HBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="Search">
+                     <HBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </StackPane>
+      <Button fx:id="btAddPozajmica" layoutX="14.0" layoutY="384.0" mnemonicParsing="false" onAction="#addPozajmica" text="Add Pozajmica" />
+      <Button fx:id="btIzmeniPozajmica" layoutX="14.0" layoutY="419.0" mnemonicParsing="false" onAction="#izmeniPozajmica" text="Izmeni" />
+      <Button fx:id="btDeletePozajmica" layoutX="14.0" layoutY="453.0" mnemonicParsing="false" onAction="#deletePozajmica" text="Delete" />
+   </children>
+</Pane>

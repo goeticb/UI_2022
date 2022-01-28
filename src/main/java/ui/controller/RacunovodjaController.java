@@ -23,6 +23,9 @@ public class RacunovodjaController {
     @FXML
     private Button btTranskacije;
 
+    @FXML
+    private Button btFaktura;
+
 
 
 
@@ -31,7 +34,8 @@ public class RacunovodjaController {
         changeContent("racunovodja/transakcijeRacunovodja.fxml");
     }
 
-    public void faktura(ActionEvent actionEvent) {
+    public void faktura(ActionEvent actionEvent) throws IOException {
+        changeContent("racunovodja/fakturaRacunovodja.fxml");
 
     }
 

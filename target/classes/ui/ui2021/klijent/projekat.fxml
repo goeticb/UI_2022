@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<Pane prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TreeTableView layoutX="7.0" layoutY="123.0" prefHeight="366.0" prefWidth="585.0">
+            <columns>
+                <TreeTableColumn maxWidth="198.4000244140625" minWidth="-Infinity" prefWidth="48.00006103515625" text="ID" />
+                <TreeTableColumn minWidth="0.0" prefWidth="51.2000732421875" text="naziv" />
+                <TreeTableColumn minWidth="0.0" prefWidth="103.20001220703125" text="opis" />
+            <TreeTableColumn prefWidth="112.79998779296875" text="od" />
+            <TreeTableColumn minWidth="0.0" prefWidth="134.4000244140625" text="do" />
+            <TreeTableColumn prefWidth="124.800048828125" text="otvoren/zatvoren" />
+            </columns>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </TreeTableView>
+      <StackPane alignment="TOP_LEFT" layoutY="18.0" prefHeight="95.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="65.0" prefWidth="551.0">
+               <children>
+                  <ComboBox prefHeight="26.0" prefWidth="114.0" promptText="ID">
+                     <HBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ComboBox prefWidth="150.0" promptText="Naziv">
+                     <HBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <DatePicker prefHeight="26.0" prefWidth="118.0" promptText="Od">
+                     <HBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <DatePicker prefHeight="26.0" prefWidth="104.0" promptText="Do">
+                     <HBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <Button mnemonicParsing="false" prefHeight="11.0" prefWidth="64.0" text="Search">
+                     <HBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </StackPane>
+    </children>
+</Pane>

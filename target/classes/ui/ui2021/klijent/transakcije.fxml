@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="idTransakcijeRacunovodjaPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.TransakcijeRacunovodjaController">
+<Pane fx:id="idPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #004455 #004455 #004455 #004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.TransakcijeController">
    <children>
       <VBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0">
          <children>
@@ -22,11 +22,17 @@
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+                     </font>
                   </Button>
-                  <Button mnemonicParsing="false" text="Beležnik">
+                  <Button fx:id="btBeleznik" alignment="CENTER" mnemonicParsing="false" onAction="#beleznik" text="Beležnik" textAlignment="CENTER">
                      <HBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                        <Insets bottom="10.0" left="10.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+                     </font>
                   </Button>
                </children>
                <opaqueInsets>
@@ -85,15 +91,15 @@
                </children>
             </HBox>
             <TreeTableView>
-               <columns>
-                  <TreeTableColumn prefWidth="95.0" text="ID Transakcije" />
-                  <TreeTableColumn prefWidth="60.0" text="Tip" />
+              <columns>
+                <TreeTableColumn prefWidth="95.0" text="ID Transakcije" />
+                <TreeTableColumn prefWidth="60.0" text="Tip" />
                   <TreeTableColumn text="Datum" />
                   <TreeTableColumn text="Klijent" />
                   <TreeTableColumn text="Artikal" />
                   <TreeTableColumn text="Količina" />
                   <TreeTableColumn text="Suma" />
-               </columns>
+              </columns>
             </TreeTableView>
          </children>
          <padding>
