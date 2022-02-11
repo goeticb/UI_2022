@@ -14,37 +14,42 @@ import java.io.IOException;
 
 public class RacunovodjaController {
 
-
+    @FXML
     public Button btZaposleniRacunovodja;
     @FXML
     private StackPane contentAreaRacunovodja;
-
+    @FXML
     public Button btRacun;
     @FXML
     private Button btTranskacije;
-
     @FXML
     private Button btFaktura;
 
 
 
-
-
     public void transkacije(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/transakcijeRacunovodja.fxml");
+        changeContent("racunovodja/transakcije.fxml");
     }
 
     public void faktura(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/fakturaRacunovodja.fxml");
+        changeContent("racunovodja/faktura.fxml");
 
     }
 
     public void zaposleniRacunovodja(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/zaposleniRacunovodja.fxml");
+        changeContent("racunovodja/zaposleni.fxml");
     }
 
     public void racun(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/racunRacunovodja.fxml");
+        changeContent("racunovodja/racun.fxml");
+    }
+
+    public void klijenti(ActionEvent actionEvent) throws IOException {
+        changeContent("racunovodja/klijenti.fxml");
+    }
+
+    public void konto(ActionEvent actionEvent) throws IOException {
+        changeContent("racunovodja/konto.fxml");
     }
 
     public void logOut(ActionEvent actionEvent) throws IOException {
@@ -57,7 +62,5 @@ public class RacunovodjaController {
         contentAreaRacunovodja.getChildren().removeAll();
         contentAreaRacunovodja.getChildren().addAll((root));
     }
-
-
 
 }

@@ -12,40 +12,43 @@ import java.io.IOException;
 
 public class AddFakturaController {
 
+    @FXML
+    private Pane idAddFakturaRacunovodjaPane;
 
     @FXML
-    private Pane idAddFakturaPane;
+    private Button btDodajKupca;
 
     @FXML
-    private Button btAddArtikal;
+    private Button btDodajDobavljaca;
 
     @FXML
-    private Button btAddKupac;
+    private Button btSaveFaktura;
 
     @FXML
-    private Button btAddDobavljac;
+    private Button btDodajArtikal;
+
+    @FXML
+    private Button btDodajPdv;
 
     public void addArtikal(ActionEvent actionEvent) throws IOException {
-        changeContent("klijent/addArtikal.fxml");
+        changeContent("racunovodja/addArtikal.fxml");
     }
 
-    public void addKupac(ActionEvent actionEvent) throws IOException {
-        changeContent("klijent/addKupac.fxml");
-    }
-
-    public void addDobavljac(ActionEvent actionEvent) throws IOException {
-        changeContent("klijent/addDobavljac.fxml");
+    public void addKlijent(ActionEvent actionEvent)throws IOException{
+        changeContent("racunovodja/addKlijent.fxml");
     }
 
     public void saveFaktura(ActionEvent actionEvent) throws IOException {
-        changeContent("klijent/faktura.fxml");
+        changeContent("racunovodja/addKonto.fxml");
+    }
+    public void addPdv(ActionEvent actionEvent) throws IOException {
+        changeContent("racunovodja/addPdv.fxml");
     }
 
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();
-        idAddFakturaPane.getChildren().removeAll();
-        idAddFakturaPane.getChildren().addAll((root));
+        idAddFakturaRacunovodjaPane.getChildren().removeAll();
+        idAddFakturaRacunovodjaPane.getChildren().addAll((root));
     }
-
 }

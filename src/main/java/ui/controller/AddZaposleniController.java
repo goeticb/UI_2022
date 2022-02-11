@@ -22,7 +22,7 @@ public class AddZaposleniController {
 
 
     public void saveZaposleni(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/zaposleniRacunovodja.fxml");
+        changeContent("racunovodja/zaposleni.fxml");
     }
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));

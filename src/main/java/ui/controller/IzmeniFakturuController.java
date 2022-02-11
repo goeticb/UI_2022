@@ -12,38 +12,53 @@ import java.io.IOException;
 
 public class IzmeniFakturuController {
 
-    @FXML
-    private Pane idIzmeniFakturuPane;
+
 
     @FXML
-    private Button btAddArtikal;
+    private Pane idIzmeniFakturuRacunovodjaPane;
 
     @FXML
-    private Button btAddKupac;
+    private Button btDodajArtikal;
 
     @FXML
-    private Button btAddDobavljac;
+    private Button btDodajKupca;
+
+    @FXML
+    private Button btDodajDobavljaca;
+
+    @FXML
+    private Button btSaveFaktura;
+
+    @FXML
+    private Button btIzmeniPdv;
+
 
     public void addArtikal(ActionEvent actionEvent) throws IOException {
-        changeContent("klijent/addArtikal.fxml");
+        changeContent("racunovodja/izmeniArtikalRacunovodja.fxml");
     }
 
     public void addKupac(ActionEvent actionEvent) throws IOException {
-        changeContent("klijent/addKupac.fxml");
+        changeContent("racunovodja/izmeniKupac.fxml");
     }
 
     public void addDobavljac(ActionEvent actionEvent) throws IOException {
-        changeContent("klijent/addDobavljac.fxml");
+        changeContent("racunovodja/izmeniDobavljac.fxml");
     }
 
     public void saveFaktura(ActionEvent actionEvent) throws IOException {
-        changeContent("klijent/faktura.fxml");
+        changeContent("racunovodja/addKonto.fxml");
     }
+    public void izmeniPdv(ActionEvent actionEvent) throws IOException {
+        changeContent("racunovodja/izmeniPdv.fxml");
+    }
+
 
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();
-        idIzmeniFakturuPane.getChildren().removeAll();
-        idIzmeniFakturuPane.getChildren().addAll((root));
+        idIzmeniFakturuRacunovodjaPane.getChildren().removeAll();
+        idIzmeniFakturuRacunovodjaPane.getChildren().addAll((root));
     }
+
+
 }

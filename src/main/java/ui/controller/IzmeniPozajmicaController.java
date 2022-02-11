@@ -22,7 +22,7 @@ public class IzmeniPozajmicaController {
 
 
     public void savePozajmica(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/pozajmicaRacunovodja.fxml");
+        changeContent("racunovodja/pozajmica.fxml");
     }
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));

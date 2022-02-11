@@ -13,7 +13,7 @@ import java.io.IOException;
 public class FakturaController {
 
     @FXML
-    private Pane idFakturaPane;
+    private Pane idFakturaRacunovodjaPane;
 
     @FXML
     private Button btAddFaktura;
@@ -24,23 +24,23 @@ public class FakturaController {
     @FXML
     private Button btDeleteFaktura;
 
+
     public void addFaktura(ActionEvent actionEvent) throws IOException {
-        changeContent("klijent/addFaktura.fxml");
+        changeContent("racunovodja/addFaktura.fxml");
     }
 
     public void izmeniFakturu(ActionEvent actionEvent) throws IOException {
-        changeContent("klijent/izmeniFakturu.fxml");
+        changeContent("racunovodja/izmeniFakturu.fxml");
     }
 
-    public void deleteFaktura(ActionEvent actionEvent) throws IOException {
-
+    public void deleteFaktura(ActionEvent actionEvent) {
     }
+
 
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();
-        idFakturaPane.getChildren().removeAll();
-        idFakturaPane.getChildren().addAll((root));
+        idFakturaRacunovodjaPane.getChildren().removeAll();
+        idFakturaRacunovodjaPane.getChildren().addAll((root));
     }
-
 }

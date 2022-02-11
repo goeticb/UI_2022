@@ -22,7 +22,7 @@ public class AddRacunController {
 
 
     public void saveRacun(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/racunRacunovodja.fxml");
+        changeContent("racunovodja/racun.fxml");
     }
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));

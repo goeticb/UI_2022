@@ -28,7 +28,7 @@ public class AddTipController {
 
 
     public void saveTip(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/tipRacunovodja.fxml");
+        changeContent("racunovodja/tip.fxml");
     }
 
     public void changeContent(String fxml) throws IOException {

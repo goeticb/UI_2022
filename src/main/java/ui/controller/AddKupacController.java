@@ -13,18 +13,18 @@ import java.io.IOException;
 public class AddKupacController {
 
     @FXML
-    private Pane idAddKupacPane;
+    private Pane idAddKupacRacunovodjaPane;
 
     @FXML
     private Button btSaveKupac;
 
     public void saveKupac(ActionEvent actionEvent) throws IOException {
-        changeContent("klijent/addFaktura.fxml");
+        changeContent("racunovodja/addFaktura.fxml");
     }
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();
-        idAddKupacPane.getChildren().removeAll();
-        idAddKupacPane.getChildren().addAll((root));
+        idAddKupacRacunovodjaPane.getChildren().removeAll();
+        idAddKupacRacunovodjaPane.getChildren().addAll((root));
     }
 }

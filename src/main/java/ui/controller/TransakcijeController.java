@@ -12,18 +12,15 @@ import java.io.IOException;
 
 public class TransakcijeController {
     @FXML
-    private Button btBeleznik;
+    private Button btBeleznikRacunovodja;
     @FXML
-    private Pane idPane;
+    private Pane idTransakcijeRacunovodjaPane;
 
-    public void beleznik(ActionEvent event) throws IOException {
-        changeContent("klijent/beleznik.fxml");
-    }
 
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();
-        idPane.getChildren().removeAll();
-        idPane.getChildren().addAll((root));
+        idTransakcijeRacunovodjaPane.getChildren().removeAll();
+        idTransakcijeRacunovodjaPane.getChildren().addAll((root));
     }
 }

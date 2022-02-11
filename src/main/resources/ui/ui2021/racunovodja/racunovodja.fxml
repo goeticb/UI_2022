@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="paneRacunovodja" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.RacunovodjaController">
+<AnchorPane fx:id="paneRacunovodja" minHeight="500.0" minWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.RacunovodjaController">
    <children>
       <BorderPane prefHeight="500.0" prefWidth="800.0">
          <left>
@@ -31,7 +31,7 @@
                         <Font name="AppleGothic Regular" size="20.0" />
                      </font>
                      <VBox.margin>
-                        <Insets bottom="60.0" left="20.0" right="20.0" top="10.0" />
+                        <Insets bottom="40.0" left="20.0" right="20.0" top="10.0" />
                      </VBox.margin>
                   </Label>
                   <Button fx:id="btTranskacije" contentDisplay="CENTER" mnemonicParsing="false" onAction="#transkacije" style="-fx-background-color: transparent;" text="Transakcije" textAlignment="CENTER" textFill="WHITE">
@@ -39,7 +39,7 @@
                         <Font name="AppleGothic Regular" size="20.0" />
                      </font>
                      <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </VBox.margin>
                   </Button>
                   <Button fx:id="btFaktura" contentDisplay="CENTER" mnemonicParsing="false" onAction="#faktura" style="-fx-background-color: transparent;" text="Fakture" textAlignment="CENTER" textFill="WHITE">
@@ -47,23 +47,31 @@
                         <Font name="AppleGothic Regular" size="20.0" />
                      </font>
                      <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </VBox.margin>
                   </Button>
                   <Button fx:id="btZaposleniRacunovodja" contentDisplay="CENTER" mnemonicParsing="false" onAction="#zaposleniRacunovodja" style="-fx-background-color: transparent;" text="Zaposleni" textAlignment="CENTER" textFill="WHITE">
                      <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </VBox.margin>
                      <font>
                         <Font name="AppleGothic Regular" size="20.0" />
                      </font>
+                  </Button>
+                  <Button fx:id="btKlijenti" mnemonicParsing="false" onAction="#klijenti" style="-fx-background-color: transparent;" text="Klijenti" textFill="WHITE">
+                     <font>
+                        <Font name="AppleGothic Regular" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
                   </Button>
                   <Button fx:id="btRacun" contentDisplay="CENTER" mnemonicParsing="false" onAction="#racun" style="-fx-background-color: transparent;" text="Račun" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="AppleGothic Regular" size="20.0" />
                      </font>
                      <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </VBox.margin>
                   </Button>
                   <Button fx:id="idLogOut" alignment="CENTER" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: transparent;" text="Log Out" textAlignment="CENTER" textFill="WHITE">
@@ -88,7 +96,7 @@
                <children>
                   <StackPane fx:id="contentAreaRacunovodja" style="-fx-background-color: #004455;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label prefHeight="87.0" prefWidth="151.0" text="WELCOME!" textAlignment="CENTER" textFill="WHITE">
+                        <Label contentDisplay="CENTER" text="WELCOME!" textAlignment="CENTER" textFill="WHITE">
                            <font>
                               <Font name="AppleGothic Regular" size="30.0" />
                            </font>

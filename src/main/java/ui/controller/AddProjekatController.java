@@ -22,7 +22,7 @@ public class AddProjekatController {
 
 
     public void saveProjekat(ActionEvent actionEvent) throws IOException {
-        changeContent("racunovodja/projekatRacunovodja.fxml");
+        changeContent("racunovodja/projekat.fxml");
     }
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));

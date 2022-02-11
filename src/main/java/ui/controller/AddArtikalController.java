@@ -13,18 +13,19 @@ import java.io.IOException;
 public class AddArtikalController {
 
     @FXML
-    private Pane idAddArtikalPane;
+    private Pane idAddArtikalRacunovodjaPane;
 
     @FXML
     private Button btSaveArtikal;
 
     public void saveArtikal(ActionEvent actionEvent) throws IOException {
-        changeContent("klijent/addFaktura.fxml");
+        changeContent("racunovodja/addFaktura.fxml");
     }
+
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();
-        idAddArtikalPane.getChildren().removeAll();
-        idAddArtikalPane.getChildren().addAll((root));
+        idAddArtikalRacunovodjaPane.getChildren().removeAll();
+        idAddArtikalRacunovodjaPane.getChildren().addAll((root));
     }
 }
