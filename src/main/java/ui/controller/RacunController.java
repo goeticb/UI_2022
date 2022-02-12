@@ -22,13 +22,14 @@ public class RacunController {
     @FXML
     private Button btAddRacun;
     @FXML
-    private  Button btIzmeniRacun;
+    private Button btIzmeniRacun;
     @FXML
     private Button btDeleteRacun;
 
     public void pozajmica(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/pozajmica.fxml");
     }
+
     public void addRacun(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/addRacun.fxml");
     }
@@ -39,13 +40,13 @@ public class RacunController {
 
     public void deleteRacun(ActionEvent actionEvent) {
     }
+
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();
         idRacunRacunovodja.getChildren().removeAll();
         idRacunRacunovodja.getChildren().addAll((root));
     }
-
 
 
 }

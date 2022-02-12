@@ -5,8 +5,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import ui.ui2021.App;
 
@@ -17,14 +15,13 @@ public class RacunovodjaController {
     @FXML
     public Button btZaposleniRacunovodja;
     @FXML
-    private StackPane contentAreaRacunovodja;
-    @FXML
     public Button btRacun;
+    @FXML
+    private StackPane contentAreaRacunovodja;
     @FXML
     private Button btTranskacije;
     @FXML
     private Button btFaktura;
-
 
 
     public void transkacije(ActionEvent actionEvent) throws IOException {

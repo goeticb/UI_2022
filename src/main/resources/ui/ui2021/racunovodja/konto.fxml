@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.TreeTableColumn?>
-<?import javafx.scene.control.TreeTableView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.StackPane?>
-
-<Pane fx:id="idKontoPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.KontoController">
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" fx:id="idKontoPane" prefHeight="500.0" prefWidth="600.0"
+      style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17"
+      fx:controller="ui.controller.KontoController">
     <children>
         <TreeTableView layoutX="6.0" layoutY="92.0" prefHeight="317.0" prefWidth="586.0">
             <columns>
-                <TreeTableColumn maxWidth="157.60003662109375" minWidth="-Infinity" prefWidth="85.60003662109375" text="ID" />
-                <TreeTableColumn minWidth="0.0" prefWidth="74.39996337890625" text="Sifra" />
-                <TreeTableColumn minWidth="0.0" prefWidth="108.0" text="Ime" />
-                <TreeTableColumn prefWidth="114.0" text="Duguje" />
-                <TreeTableColumn prefWidth="104.0" text="Potrazuje" />
-                <TreeTableColumn prefWidth="98.0" text="A/P" />
+                <TreeTableColumn maxWidth="157.60003662109375" minWidth="-Infinity" prefWidth="85.60003662109375"
+                                 text="ID"/>
+                <TreeTableColumn minWidth="0.0" prefWidth="74.39996337890625" text="Sifra"/>
+                <TreeTableColumn minWidth="0.0" prefWidth="108.0" text="Ime"/>
+                <TreeTableColumn prefWidth="114.0" text="Duguje"/>
+                <TreeTableColumn prefWidth="104.0" text="Potrazuje"/>
+                <TreeTableColumn prefWidth="98.0" text="A/P"/>
             </columns>
             <opaqueInsets>
-                <Insets />
+                <Insets/>
             </opaqueInsets>
         </TreeTableView>
         <StackPane alignment="TOP_LEFT" layoutY="-2.0" prefHeight="94.0" prefWidth="592.0">
@@ -30,45 +27,47 @@
                     <children>
                         <ComboBox prefHeight="26.0" prefWidth="100.0" promptText="Sifra">
                             <HBox.margin>
-                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
                             </HBox.margin>
                         </ComboBox>
                         <ComboBox prefHeight="26.0" prefWidth="91.0" promptText="Ime">
                             <HBox.margin>
-                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
                             </HBox.margin>
                         </ComboBox>
                         <ComboBox prefHeight="26.0" prefWidth="89.0" promptText="Duguje">
                             <HBox.margin>
-                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
                             </HBox.margin>
                         </ComboBox>
                         <ComboBox prefHeight="26.0" prefWidth="90.0" promptText="Potrazuje">
                             <HBox.margin>
-                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
                             </HBox.margin>
                         </ComboBox>
                         <ComboBox prefHeight="26.0" prefWidth="86.0" promptText="A/P">
                             <HBox.margin>
-                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
                             </HBox.margin>
                         </ComboBox>
                         <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="Pretraži">
                             <HBox.margin>
-                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
                             </HBox.margin>
                         </Button>
                     </children>
                 </HBox>
             </children>
             <opaqueInsets>
-                <Insets />
+                <Insets/>
             </opaqueInsets>
             <padding>
-                <Insets top="30.0" />
+                <Insets top="30.0"/>
             </padding>
         </StackPane>
-        <Button fx:id="btAddKonto" layoutX="369.0" layoutY="419.0" mnemonicParsing="false" onAction="#addKonto" text="Dodaj konto" />
-        <Button fx:id="btDeleteKonto" layoutX="474.0" layoutY="418.0" mnemonicParsing="false" onAction="#deleteKonto" prefHeight="26.0" prefWidth="112.0" text="Obriši konto" />
+        <Button fx:id="btAddKonto" layoutX="369.0" layoutY="419.0" mnemonicParsing="false" onAction="#addKonto"
+                text="Dodaj konto"/>
+        <Button fx:id="btDeleteKonto" layoutX="474.0" layoutY="418.0" mnemonicParsing="false" onAction="#deleteKonto"
+                prefHeight="26.0" prefWidth="112.0" text="Obriši konto"/>
     </children>
 </Pane>

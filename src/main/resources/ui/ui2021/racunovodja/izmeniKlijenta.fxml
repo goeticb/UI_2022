@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-
-<Pane fx:id="idIzmeniKlijentaPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.IzmeniKlijentaController">
+<Pane xmlns:fx="http://javafx.com/fxml/1" fx:id="idIzmeniKlijentaPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #004455;"
+      xmlns="http://javafx.com/javafx/17" fx:controller="ui.controller.IzmeniKlijentaController">
     <children>
         <HBox layoutX="37.0" layoutY="62.0" prefHeight="250.0" prefWidth="526.0">
             <children>
@@ -17,26 +14,26 @@
                     <children>
                         <Label text="Naziv klijenta" textFill="WHITE">
                             <VBox.margin>
-                                <Insets bottom="25.0" left="15.0" right="15.0" top="25.0" />
+                                <Insets bottom="25.0" left="15.0" right="15.0" top="25.0"/>
                             </VBox.margin>
                             <font>
-                                <Font name="System Bold Italic" size="14.0" />
+                                <Font name="System Bold Italic" size="14.0"/>
                             </font>
                         </Label>
                         <Label text="Adresa" textFill="WHITE">
                             <VBox.margin>
-                                <Insets bottom="25.0" left="15.0" right="15.0" top="35.0" />
+                                <Insets bottom="25.0" left="15.0" right="15.0" top="35.0"/>
                             </VBox.margin>
                             <font>
-                                <Font name="System Bold Italic" size="14.0" />
+                                <Font name="System Bold Italic" size="14.0"/>
                             </font>
                         </Label>
                         <Label text="Račun" textFill="WHITE">
                             <font>
-                                <Font name="System Bold Italic" size="14.0" />
+                                <Font name="System Bold Italic" size="14.0"/>
                             </font>
                             <VBox.margin>
-                                <Insets bottom="5.0" left="15.0" right="15.0" top="35.0" />
+                                <Insets bottom="5.0" left="15.0" right="15.0" top="35.0"/>
                             </VBox.margin>
                         </Label>
                     </children>
@@ -45,17 +42,17 @@
                     <children>
                         <TextField prefHeight="26.0" prefWidth="165.0">
                             <VBox.margin>
-                                <Insets bottom="25.0" left="30.0" right="30.0" top="25.0" />
+                                <Insets bottom="25.0" left="30.0" right="30.0" top="25.0"/>
                             </VBox.margin>
                         </TextField>
                         <TextField>
                             <VBox.margin>
-                                <Insets bottom="25.0" left="30.0" right="30.0" top="25.0" />
+                                <Insets bottom="25.0" left="30.0" right="30.0" top="25.0"/>
                             </VBox.margin>
                         </TextField>
                         <TextField>
                             <VBox.margin>
-                                <Insets bottom="25.0" left="30.0" right="30.0" top="25.0" />
+                                <Insets bottom="25.0" left="30.0" right="30.0" top="25.0"/>
                             </VBox.margin>
                         </TextField>
                     </children>
@@ -64,9 +61,10 @@
         </HBox>
         <Label layoutX="23.0" layoutY="23.0" text="Izmeni klijenta" textFill="WHITE">
             <font>
-                <Font name="System Bold Italic" size="18.0" />
+                <Font name="System Bold Italic" size="18.0"/>
             </font>
         </Label>
-        <Button fx:id="btSaveKlijent" layoutX="55.0" layoutY="300.0" mnemonicParsing="false" onAction="#saveKlijent" text="Save" />
+        <Button fx:id="btSaveKlijent" layoutX="55.0" layoutY="300.0" mnemonicParsing="false" onAction="#saveKlijent"
+                text="Save"/>
     </children>
 </Pane>

@@ -13,18 +13,12 @@ import java.io.IOException;
 public class AddTipController {
 
 
-
-
     @FXML
     private Pane idAddTipPane;
 
 
     @FXML
     private Button btSaveTip;
-
-
-
-
 
 
     public void saveTip(ActionEvent actionEvent) throws IOException {

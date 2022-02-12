@@ -17,6 +17,7 @@ public class IzmeniKlijentaController {
     public void saveKlijent(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/klijenti.fxml");
     }
+
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();

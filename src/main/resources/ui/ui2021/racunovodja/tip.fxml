@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.TreeTableColumn?>
-<?import javafx.scene.control.TreeTableView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.StackPane?>
-
-<Pane fx:id="tipPaneRacunovodja" prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.TipController">
-   <children>
-      <TreeTableView layoutX="7.0" layoutY="110.0" prefHeight="232.0" prefWidth="586.0">
-         <columns>
-            <TreeTableColumn maxWidth="198.4000244140625" minWidth="-Infinity" prefWidth="192.79998779296875" text="ID" />
-            <TreeTableColumn minWidth="0.0" prefWidth="205.60003662109375" text="opis" />
-            <TreeTableColumn minWidth="0.0" prefWidth="181.60009765625" text="zvanje" />
-         </columns>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </TreeTableView>
-      <StackPane alignment="TOP_LEFT" layoutX="10.0" layoutY="8.0" prefHeight="82.0" prefWidth="580.0">
-         <children>
-            <HBox prefHeight="0.0" prefWidth="580.0">
-               <children>
-                  <ComboBox prefWidth="150.0" promptText="ID">
-                     <HBox.margin>
-                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
-                     </HBox.margin>
-                  </ComboBox>
-                  <ComboBox prefWidth="150.0" promptText="Zvanje">
-                     <HBox.margin>
-                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
-                     </HBox.margin>
-                  </ComboBox>
-                  <Button mnemonicParsing="false" prefHeight="11.0" prefWidth="64.0" text="Pretraži">
-                     <HBox.margin>
-                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
-                     </HBox.margin>
-                  </Button>
-               </children>
-            </HBox>
-         </children>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-         <padding>
-            <Insets top="30.0" />
-         </padding>
-      </StackPane>
-      <Button fx:id="btAddTip" layoutX="14.0" layoutY="357.0" mnemonicParsing="false" onAction="#addTip" text="Dodaj tip" />
-      <Button fx:id="btIzmeniTip" layoutX="12.0" layoutY="390.0" mnemonicParsing="false" onAction="#izmeniTip" text="Izmeni tip" />
-      <Button fx:id="btDeleteTip" layoutX="14.0" layoutY="424.0" mnemonicParsing="false" onAction="#deleteTip" text="Obriši tip" />
-   </children>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" fx:id="tipPaneRacunovodja" prefHeight="516.0" prefWidth="600.0"
+      style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17"
+      fx:controller="ui.controller.TipController">
+    <children>
+        <TreeTableView layoutX="7.0" layoutY="110.0" prefHeight="232.0" prefWidth="586.0">
+            <columns>
+                <TreeTableColumn maxWidth="198.4000244140625" minWidth="-Infinity" prefWidth="192.79998779296875"
+                                 text="ID"/>
+                <TreeTableColumn minWidth="0.0" prefWidth="205.60003662109375" text="opis"/>
+                <TreeTableColumn minWidth="0.0" prefWidth="181.60009765625" text="zvanje"/>
+            </columns>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </TreeTableView>
+        <StackPane alignment="TOP_LEFT" layoutX="10.0" layoutY="8.0" prefHeight="82.0" prefWidth="580.0">
+            <children>
+                <HBox prefHeight="0.0" prefWidth="580.0">
+                    <children>
+                        <ComboBox prefWidth="150.0" promptText="ID">
+                            <HBox.margin>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+                            </HBox.margin>
+                        </ComboBox>
+                        <ComboBox prefWidth="150.0" promptText="Zvanje">
+                            <HBox.margin>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+                            </HBox.margin>
+                        </ComboBox>
+                        <Button mnemonicParsing="false" prefHeight="11.0" prefWidth="64.0" text="Pretraži">
+                            <HBox.margin>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <padding>
+                <Insets top="30.0"/>
+            </padding>
+        </StackPane>
+        <Button fx:id="btAddTip" layoutX="14.0" layoutY="357.0" mnemonicParsing="false" onAction="#addTip"
+                text="Dodaj tip"/>
+        <Button fx:id="btIzmeniTip" layoutX="12.0" layoutY="390.0" mnemonicParsing="false" onAction="#izmeniTip"
+                text="Izmeni tip"/>
+        <Button fx:id="btDeleteTip" layoutX="14.0" layoutY="424.0" mnemonicParsing="false" onAction="#deleteTip"
+                text="Obriši tip"/>
+    </children>
 </Pane>

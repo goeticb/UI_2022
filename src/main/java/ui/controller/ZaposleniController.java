@@ -31,8 +31,6 @@ public class ZaposleniController {
     private Button btDeleteZaposleni;
 
 
-
-
     public void tip(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/tip.fxml");
     }
@@ -40,6 +38,7 @@ public class ZaposleniController {
     public void projekat(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/projekat.fxml");
     }
+
     public void addZaposleni(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/addZaposleni.fxml");
     }
@@ -61,7 +60,6 @@ public class ZaposleniController {
         idZaposneliPaneRacunovodja.getChildren().removeAll();
         idZaposneliPaneRacunovodja.getChildren().addAll((root));
     }
-
 
 
 }

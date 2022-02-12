@@ -13,7 +13,6 @@ import java.io.IOException;
 public class ProjekatController {
 
 
-
     @FXML
     private Pane idProjekatPane;
 
@@ -25,7 +24,6 @@ public class ProjekatController {
 
     @FXML
     private Button btDeleteProjekat;
-
 
 
     public void addProjekat(ActionEvent actionEvent) throws IOException {

@@ -34,13 +34,14 @@ public class AddFakturaController {
         changeContent("racunovodja/addArtikal.fxml");
     }
 
-    public void addKlijent(ActionEvent actionEvent)throws IOException{
+    public void addKlijent(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/addKlijent.fxml");
     }
 
     public void saveFaktura(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/addKonto.fxml");
     }
+
     public void addPdv(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/addPdv.fxml");
     }

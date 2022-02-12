@@ -14,11 +14,11 @@ public class KlijentiController {
     @FXML
     private Pane idKlijentiPane;
 
-    public void addKlijent(ActionEvent actionEvent) throws IOException{
+    public void addKlijent(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/addKlijent.fxml");
     }
 
-    public void izmeniKlijenta(ActionEvent actionEvent) throws IOException{
+    public void izmeniKlijenta(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/izmeniKlijenta.fxml");
     }
 

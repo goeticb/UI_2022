@@ -39,14 +39,12 @@ public class TipController {
     }
 
 
-
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();
         tipPaneRacunovodja.getChildren().removeAll();
         tipPaneRacunovodja.getChildren().addAll((root));
     }
-
 
 
 }

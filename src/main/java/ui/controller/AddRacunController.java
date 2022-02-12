@@ -20,10 +20,10 @@ public class AddRacunController {
     private Button btSaveRacun;
 
 
-
     public void saveRacun(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/racun.fxml");
     }
+
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();

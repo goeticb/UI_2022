@@ -17,6 +17,7 @@ public class AddKontoController {
     public void saveKonto(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/transakcije.fxml");
     }
+
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();

@@ -21,6 +21,7 @@ public class IzmeniKupacController {
     public void saveKupac(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/izmeniFakturu.fxml");
     }
+
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();

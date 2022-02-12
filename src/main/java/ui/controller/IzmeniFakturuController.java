@@ -13,7 +13,6 @@ import java.io.IOException;
 public class IzmeniFakturuController {
 
 
-
     @FXML
     private Pane idIzmeniFakturuRacunovodjaPane;
 
@@ -48,6 +47,7 @@ public class IzmeniFakturuController {
     public void saveFaktura(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/addKonto.fxml");
     }
+
     public void izmeniPdv(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/izmeniPdv.fxml");
     }

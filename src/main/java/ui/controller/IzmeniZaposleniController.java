@@ -20,10 +20,10 @@ public class IzmeniZaposleniController {
     private Button btSaveZaposleni;
 
 
-
     public void saveZaposleni(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/zaposleni.fxml");
     }
+
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         Parent root = fxmlLoader.load();

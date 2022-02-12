@@ -8,12 +8,9 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import ui.ui2021.App;
 
-import java.awt.*;
 import java.io.IOException;
 
 public class IzmeniTipController {
-
-
 
 
     @FXML
@@ -21,9 +18,6 @@ public class IzmeniTipController {
 
     @FXML
     private Button btSaveTip;
-
-
-
 
 
     public void saveTip(ActionEvent actionEvent) throws IOException {

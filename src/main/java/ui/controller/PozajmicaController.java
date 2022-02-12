@@ -26,7 +26,6 @@ public class PozajmicaController {
     private Button btDeletePozajmica;
 
 
-
     public void addPozajmica(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/addPozajmica.fxml");
     }
