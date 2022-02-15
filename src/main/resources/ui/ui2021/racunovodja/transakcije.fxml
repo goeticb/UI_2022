@@ -73,7 +73,6 @@
                 <TableColumn fx:id="tcDate" prefWidth="75.0" text="Date" />
                   <TableColumn fx:id="tcSuma" prefWidth="84.79998779296875" text="Suma" />
                   <TableColumn fx:id="tcTipTransakcije" prefWidth="96.79998779296875" text="tipTransakcije" />
-                  <TableColumn fx:id="tcUplatilac" prefWidth="106.4000244140625" text="Uplatilac" />
                   <TableColumn fx:id="tcFakturaId" prefWidth="122.40008544921875" text="FakturaId" />
               </columns>
             </TableView>

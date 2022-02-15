@@ -34,8 +34,7 @@ public class TransakcijeController {
     @FXML
     private TableColumn<Transakcija, String> tcTipTransakcije;
 
-    @FXML
-    private TableColumn<Transakcija, String> tcUplatilac;
+
 
     @FXML
     private TableView<Transakcija> tvTransakcija;
@@ -47,7 +46,6 @@ public class TransakcijeController {
     public void initialize() {
         tcId.setCellValueFactory(new PropertyValueFactory("id"));
         tcDate.setCellValueFactory(new PropertyValueFactory("date"));
-        tcUplatilac.setCellValueFactory(new PropertyValueFactory("uplatilac"));
         tcFakturaId.setCellValueFactory(new PropertyValueFactory("fakturaId"));
         tcTipTransakcije.setCellValueFactory(new PropertyValueFactory("tipTransakcije"));
         tcSuma.setCellValueFactory(new PropertyValueFactory("suma"));
@@ -89,10 +87,9 @@ public class TransakcijeController {
                 System.out.println(date);
                 int suma = myRS.getInt("suma");
                 String tipTransakcije = myRS.getString("tipTransakcije");
-                String uplatilac = myRS.getString("upatilac");
                 int fakturaId = myRS.getInt("Faktura_idFaktura");
 
-                Transakcija transakcija = new Transakcija(id, date, suma, tipTransakcije, uplatilac, fakturaId);
+                Transakcija transakcija = new Transakcija(id, date, suma, tipTransakcije, fakturaId);
                 list.add(transakcija);
                 tvTransakcija.setItems(list);
             }
