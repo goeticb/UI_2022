@@ -216,7 +216,8 @@ public class AddFakturaController {
                     suma = cena * kolicina;
                 }
 
-            sql = "INSERT INTO faktura (kolicina, suma, tipFakture, opis, datumKreiranja, Kupac_idKupac, Klijent_idKlijent, Uplatilac_Primalac, PDV_idPDV, Stavka_idStavka) VALUES ("+ kolicina +", "+ suma +", '"+ tipFakture + "', '"+ opis + "', " + " current_date() ,"+  kupacId +", "+ klijentId+", '" + tipTransakcije +"' , " + pdvId +" , " + artikalId + ")";
+            sql = "INSERT INTO faktura (kolicina, suma, tipFakture, opis, datumKreiranja, Klijent_idKlijent, Uplatilac_Primalac, PDV_idPDV, Stavka_idStavka) VALUES ("+ kolicina +", "+ suma +", '"+ tipFakture + "', '"+ opis + "', " + " current_date()"+", "+ klijentId+", '" + tipTransakcije +"' , " + pdvId +" , " + artikalId + ")";
+                System.out.println(sql);
                 stmt = myConn.createStatement();
                 stmt.executeUpdate(sql);
 
@@ -230,7 +231,7 @@ public class AddFakturaController {
                 }
 
 
-            sql = "INSERT INTO transakcija (datum, suma, tipTransakcije, upatilac, Faktura_idFaktura ) VALUES ( current_date() , "+ suma +", '"+ tipTransakcije + "' , 'uplatilac' , " + fakturaId + ")";
+            sql = "INSERT INTO transakcija (datum, suma, tipTransakcije, Faktura_idFaktura ) VALUES ( current_date() , "+ suma +", '"+ tipTransakcije + "' , " + fakturaId + ")";
                 System.out.println(sql);
                 stmt = myConn.createStatement();
                 stmt.executeUpdate(sql);
@@ -249,6 +250,28 @@ public class AddFakturaController {
                 System.out.println(sql);
                 stmt = myConn.createStatement();
                 stmt.executeUpdate(sql);
+                /*
+                zavrsiti!!!!
+                if(rbUplata.isSelected()){
+                    //obican centar troskova
+                    sql = "INSERT INTO centratTroskova (potrazuje, naziv) VALUES (+ suma +)";
+                    System.out.println(sql);
+                    stmt = myConn.createStatement();
+                    stmt.executeUpdate(sql);
+                }
+                else {
+                    //debit punis duguje
+
+                }
+                */
+
+
+
+
+
+
+
+
             } catch (SQLException e) {
                 e.printStackTrace();
             } finally {
