@@ -24,9 +24,14 @@ public class FakturaController {
     @FXML
     private Button btDeleteFaktura;
 
+    @FXML
+    public void initialize() {
+        System.out.println("USO JE Ovde Scene BilderFaktura");
+    }
 
     public void addFaktura(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/addFaktura.fxml");
+        //App.getInstance().getMyConn();
     }
 
     public void izmeniFakturu(ActionEvent actionEvent) throws IOException {

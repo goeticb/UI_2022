@@ -21,6 +21,7 @@ public class IzmeniPozajmicaController {
 
 
     public void savePozajmica(ActionEvent actionEvent) throws IOException {
+
         changeContent("racunovodja/pozajmica.fxml");
     }
 

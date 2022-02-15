@@ -4,17 +4,56 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import ui.ui2021.App;
+import java.sql.*;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class AddKlijentController {
 
     @FXML
     private Pane idAddKlijentPane;
 
-    public void saveKlijent(ActionEvent actionEvent) throws IOException {
+    @FXML
+    private TextField tfNazivKlijenta;
+
+    @FXML
+    private TextField tfAdresa;
+
+    @FXML
+    private TextField tfRacun;
+
+    public void saveKlijent(ActionEvent actionEvent) throws IOException, SQLException {
+        String nazivKlijenta = tfNazivKlijenta.getText();
+        String adresa = tfAdresa.getText();
+        int racun = Integer.parseInt(tfRacun.getText());
+        String dbURL = "jdbc:mysql://localhost:3306/mydb";
+        String user = "root";
+        String pass = "root";
+
+        Connection myConn = null;
+
+        try {
+            myConn = DriverManager.getConnection(dbURL, user, pass);
+            System.out.println("prosoAddKlijent");
+            Statement stmt = myConn.createStatement();
+            String sql = "INSERT INTO klijent (nazivKlijenta, adresaKlijenta, racunKlijenta) VALUES ('"+ nazivKlijenta +"', '"+ adresa +"', "+racun + ")";
+            System.out.println(sql);
+            stmt.executeUpdate(sql);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            if(myConn != null){
+                myConn.close();
+            }
+        }
         changeContent("racunovodja/klijenti.fxml");
     }
 
