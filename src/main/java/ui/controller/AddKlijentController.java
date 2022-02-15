@@ -40,7 +40,7 @@ public class AddKlijentController {
         Connection myConn = null;
 
         try {
-            myConn = DriverManager.getConnection(dbURL, user, pass);
+            myConn = DriverManager.getConnection(dbURL, App.getUser(), App.getPass());
             System.out.println("prosoAddKlijent");
             Statement stmt = myConn.createStatement();
             String sql = "INSERT INTO klijent (nazivKlijenta, adresaKlijenta, racunKlijenta) VALUES ('"+ nazivKlijenta +"', '"+ adresa +"', "+racun + ")";

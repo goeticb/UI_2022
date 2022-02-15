@@ -3,9 +3,9 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TreeTableColumn?>
-<?import javafx.scene.control.TreeTableView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -25,7 +25,7 @@
                                 <Font name="Apple SD Gothic Neo Regular" size="13.0" />
                             </font>
                         </Label>
-                        <TextField prefHeight="25.0" prefWidth="100.0">
+                        <TextField fx:id="tfNaziv" prefHeight="25.0" prefWidth="100.0">
                             <HBox.margin>
                                 <Insets right="15.0" top="5.0" />
                             </HBox.margin>
@@ -38,7 +38,7 @@
                                 <Insets right="5.0" top="10.0" />
                             </HBox.margin>
                         </Label>
-                        <TextField prefHeight="25.0" prefWidth="100.0">
+                        <TextField fx:id="tfAdresa" prefHeight="25.0" prefWidth="100.0">
                             <HBox.margin>
                                 <Insets right="15.0" top="5.0" />
                             </HBox.margin>
@@ -51,7 +51,7 @@
                                 <Insets right="5.0" top="10.0" />
                             </HBox.margin>
                         </Label>
-                        <TextField prefHeight="25.0" prefWidth="100.0">
+                        <TextField fx:id="tfRacun" prefHeight="25.0" prefWidth="100.0">
                             <HBox.margin>
                                 <Insets right="15.0" top="5.0" />
                             </HBox.margin>
@@ -66,14 +66,14 @@
                         </Button>
                     </children>
                 </HBox>
-                <TreeTableView fx:id="ttvKlijenti">
-                    <columns>
-                        <TreeTableColumn prefWidth="116.0" text="ID Dobavljač" />
-                        <TreeTableColumn prefWidth="125.0" text="Naziv" />
-                        <TreeTableColumn prefWidth="152.0" text="Adresa" />
-                        <TreeTableColumn prefWidth="166.0" text="Račun" />
-                    </columns>
-                </TreeTableView>
+            <TableView fx:id="tvKlijent" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="tcId" prefWidth="66.4000244140625" text="ID" />
+                <TableColumn fx:id="tcIme" prefWidth="188.79998779296875" text="Ime" />
+                  <TableColumn fx:id="tcAdresa" prefWidth="157.60003662109375" text="Adresa" />
+                  <TableColumn fx:id="tcRacun" prefWidth="148.7999267578125" text="Racun" />
+              </columns>
+            </TableView>
                 <HBox alignment="TOP_RIGHT" minHeight="50.0" minWidth="200.0" prefHeight="50.0" prefWidth="564.0">
                     <children>
                         <Button fx:id="btAddKlijent" alignment="CENTER" mnemonicParsing="false" onAction="#addKlijent" text="Dodaj klijenta" textAlignment="CENTER">

@@ -12,6 +12,8 @@ public class App extends Application {
 
     private static Stage stage;
     private static App instance = null;
+    private static String user = "root";
+    private static String pass = "root";
     //private static Connection myConn;
 
     public static App getInstance() {
@@ -23,8 +25,8 @@ public class App extends Application {
 
     public static void main(String[] args) throws SQLException {
         String dbURL = "jdbc:mysql://localhost:3306/mydb";
-        String user = "root";
-        String pass = "root";
+        //String user = "root";
+        //String pass = "root";
 
         Connection myConn = null;
         ResultSet myRS = null;
@@ -71,7 +73,15 @@ public class App extends Application {
         stage.centerOnScreen();
         stage.show();
     }
-/*
+
+    public static String getUser() {
+        return user;
+    }
+
+    public static String getPass() {
+        return pass;
+    }
+    /*
     public static Connection getMyConn() {
         return myConn;
     }

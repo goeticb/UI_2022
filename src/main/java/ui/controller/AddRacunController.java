@@ -42,7 +42,7 @@ public class AddRacunController {
         Connection myConn = null;
 
         try {
-            myConn = DriverManager.getConnection(dbURL, user, pass);
+            myConn = DriverManager.getConnection(dbURL, App.getUser(), App.getPass());
             System.out.println("prosoAddKlijent");
             Statement stmt = myConn.createStatement();
             String sql = "INSERT INTO racunUBanci (brojRacuna, imeBanke) VALUES ("+ brojRacuna +", '"+ imeBanke + "')";

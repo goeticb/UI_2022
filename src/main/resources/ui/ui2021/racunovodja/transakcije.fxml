@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<Pane xmlns:fx="http://javafx.com/fxml/1" fx:id="idTransakcijeRacunovodjaPane" prefHeight="500.0" prefWidth="600.0"
-      style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17"
-      fx:controller="ui.controller.TransakcijeController">
+
+<Pane fx:id="idTransakcijeRacunovodjaPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.TransakcijeController">
     <children>
         <VBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0">
             <children>
@@ -14,68 +20,66 @@
                     <children>
                         <Label alignment="CENTER" text="Banka: " textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="5.0" top="10.0"/>
+                                <Insets right="5.0" top="10.0" />
                             </HBox.margin>
                             <font>
-                                <Font name="Apple SD Gothic Neo Regular" size="13.0"/>
+                                <Font name="Apple SD Gothic Neo Regular" size="13.0" />
                             </font>
                         </Label>
                         <ComboBox fx:id="cbBanka" prefWidth="100.0">
                             <HBox.margin>
-                                <Insets right="15.0" top="5.0"/>
+                                <Insets right="15.0" top="5.0" />
                             </HBox.margin>
                         </ComboBox>
                         <Label alignment="CENTER" text="Od: " textAlignment="CENTER" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="5.0" top="10.0"/>
+                                <Insets right="5.0" top="10.0" />
                             </HBox.margin>
                             <font>
-                                <Font name="Apple SD Gothic Neo Regular" size="13.0"/>
+                                <Font name="Apple SD Gothic Neo Regular" size="13.0" />
                             </font>
                         </Label>
                         <DatePicker fx:id="dpOd" maxWidth="100.0">
                             <HBox.margin>
-                                <Insets right="15.0" top="5.0"/>
+                                <Insets right="15.0" top="5.0" />
                             </HBox.margin>
                         </DatePicker>
                         <Label alignment="CENTER" text="Do:" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="5.0" top="10.0"/>
+                                <Insets right="5.0" top="10.0" />
                             </HBox.margin>
                             <font>
-                                <Font name="Apple SD Gothic Neo Regular" size="13.0"/>
+                                <Font name="Apple SD Gothic Neo Regular" size="13.0" />
                             </font>
                         </Label>
-                        <DatePicker maxWidth="100.0">
+                        <DatePicker fx:id="dpDo" maxWidth="100.0">
                             <HBox.margin>
-                                <Insets right="15.0" top="5.0"/>
+                                <Insets right="15.0" top="5.0" />
                             </HBox.margin>
                         </DatePicker>
-                        <Button fx:id="btPretrazi" maxHeight="27.0" mnemonicParsing="false" text="Pretraži"
-                                textAlignment="CENTER">
+                        <Button fx:id="btPretrazi" maxHeight="27.0" mnemonicParsing="false" text="Pretraži" textAlignment="CENTER">
                             <HBox.margin>
-                                <Insets left="20.0" top="5.0"/>
+                                <Insets left="20.0" top="5.0" />
                             </HBox.margin>
                             <font>
-                                <Font name="Apple SD Gothic Neo Regular" size="13.0"/>
+                                <Font name="Apple SD Gothic Neo Regular" size="13.0" />
                             </font>
                         </Button>
                     </children>
                 </HBox>
-                <TreeTableView>
-                    <columns>
-                        <TreeTableColumn prefWidth="95.0" text="ID Transakcije"/>
-                        <TreeTableColumn prefWidth="60.0" text="Tip"/>
-                        <TreeTableColumn text="Datum"/>
-                        <TreeTableColumn text="Uplatilac"/>
-                        <TreeTableColumn text="Artikal"/>
-                        <TreeTableColumn prefWidth="81.0" text="Količina"/>
-                        <TreeTableColumn prefWidth="83.0" text="Suma"/>
-                    </columns>
-                </TreeTableView>
+            <TableView fx:id="tvTransakcija" prefHeight="200.0" prefWidth="584.0">
+              <columns>
+                <TableColumn fx:id="tcId" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="tcDate" prefWidth="75.0" text="Date" />
+                  <TableColumn fx:id="tcSuma" prefWidth="84.79998779296875" text="Suma" />
+                  <TableColumn fx:id="tcTipTransakcije" prefWidth="96.79998779296875" text="tipTransakcije" />
+                  <TableColumn fx:id="tcUplatilac" prefWidth="106.4000244140625" text="Uplatilac" />
+                  <TableColumn fx:id="tcFakturaId" prefWidth="122.40008544921875" text="FakturaId" />
+              </columns>
+            </TableView>
             </children>
             <padding>
-                <Insets bottom="20.0" left="20.0" right="20.0" top="30.0"/>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="30.0" />
             </padding>
         </VBox>
     </children>
