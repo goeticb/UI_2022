@@ -97,8 +97,11 @@ public class PozajmicaController {
             p = myConn.prepareStatement(sql);
             myRS = p.executeQuery();
 
+            int c=0;
             while(myRS.next()){
+                c=1;
                 //System.out.println("KLIJENT");
+                System.out.println("xddd");
 
                 int id = myRS.getInt("idPozajmica");
                 String principal = myRS.getString("principal");
@@ -111,6 +114,10 @@ public class PozajmicaController {
                 list.add(pozajmica);
                 tvPozajmica.setItems(list);
             }
+            if(c==0){
+                tvPozajmica.setItems(null);
+            }
+
 //            changeContent("racunovodja/pozajmica.fxml");
 
         } catch (SQLException e) {
