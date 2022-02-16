@@ -160,6 +160,92 @@ public class KlijentiController {
             }
         }
 
+    }
+
+    public void filtrirajKlijentaPoImenu(String naziv) throws SQLException {
+        ObservableList<Klijent> list = FXCollections.observableArrayList();
+        String dbURL = "jdbc:mysql://localhost:3306/mydb";
+        String user = "root";
+        String pass = "root";
+
+        Connection myConn = null;
+        ResultSet myRS = null;
+        PreparedStatement p = null;
+
+        try {
+            myConn = DriverManager.getConnection(dbURL, App.getUser(), App.getPass());
+            System.out.println("prosoKlijent");
+            String sql = "select * from klijent where nazivKlijenta = " + naziv;
+            p = myConn.prepareStatement(sql);
+            myRS = p.executeQuery();
+
+            while(myRS.next()){
+                //System.out.println("KLIJENT");
+
+                int id = myRS.getInt("idDobavljac");
+                String nazivKlijenta = myRS.getString("nazivKlijenta");
+                String adresaKlijenta = myRS.getString("adresaKlijenta");
+                int racunKlijnta = myRS.getInt("racunKlijenta");
+
+                Klijent klijent = new Klijent(id, nazivKlijenta, adresaKlijenta, racunKlijnta);
+                list.add(klijent);
+                tvKlijent.setItems(list);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            if(myConn != null){
+                myConn.close();
+            }
+            if(myRS != null){
+                myRS.close();
+            }
+        }
 
     }
+
+    public void filtrirajKlijentaPoAdresi(String adresa) throws SQLException {
+        ObservableList<Klijent> list = FXCollections.observableArrayList();
+        String dbURL = "jdbc:mysql://localhost:3306/mydb";
+        String user = "root";
+        String pass = "root";
+
+        Connection myConn = null;
+        ResultSet myRS = null;
+        PreparedStatement p = null;
+
+        try {
+            myConn = DriverManager.getConnection(dbURL, App.getUser(), App.getPass());
+            System.out.println("prosoKlijent");
+            String sql = "select * from klijent where adresaKlijenta = " + adresa;
+            p = myConn.prepareStatement(sql);
+            myRS = p.executeQuery();
+
+            while(myRS.next()){
+                //System.out.println("KLIJENT");
+
+                int id = myRS.getInt("idDobavljac");
+                String nazivKlijenta = myRS.getString("nazivKlijenta");
+                String adresaKlijenta = myRS.getString("adresaKlijenta");
+                int racunKlijnta = myRS.getInt("racunKlijenta");
+
+                Klijent klijent = new Klijent(id, nazivKlijenta, adresaKlijenta, racunKlijnta);
+                list.add(klijent);
+                tvKlijent.setItems(list);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            if(myConn != null){
+                myConn.close();
+            }
+            if(myRS != null){
+                myRS.close();
+            }
+        }
+
+    }
+
 }
