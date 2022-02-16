@@ -92,7 +92,7 @@ public class PozajmicaController {
             myConn = DriverManager.getConnection(dbURL, App.getUser(), App.getPass());
             //System.out.println("prosoAddKlijent");
             Statement stmt = myConn.createStatement();
-            String sql = "select * from mydb.pozajmica WHERE datum = '" + datumDate + "'";
+            String sql = "select * from pozajmica WHERE datum = '" + datumDate + "'";
             System.out.println(sql);
             p = myConn.prepareStatement(sql);
             myRS = p.executeQuery();
