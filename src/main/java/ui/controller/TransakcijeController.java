@@ -99,10 +99,7 @@ public class TransakcijeController {
                 sql = "select * from transakcija where " + from + " and " +to;
 
 
-            System.out.println(from);
-            System.out.println(to);
-            System.out.println(dpDo.getValue().toString());
-            System.out.println(dpOd.getValue().toString());
+
             System.out.println(sql);
             p = myConn.prepareStatement(sql);
             myRS = p.executeQuery();

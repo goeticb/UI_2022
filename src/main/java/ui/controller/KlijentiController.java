@@ -127,9 +127,6 @@ public class KlijentiController {
             } else if (flag == 3) {
                 query = "select * from klijent where " + naziv + " and " + adresa + " and " + racun;
             }
-            System.out.println(tfAdresa.getText());
-            System.out.println(tfNaziv.getText());
-            System.out.println(tfRacun.getText());
             System.out.println(naziv);
             System.out.println(racun);
             System.out.println(adresa);
