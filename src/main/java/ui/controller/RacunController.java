@@ -103,8 +103,9 @@ public class RacunController {
             String sql = "DELETE FROM racunubanci WHERE idRacunUBanci = " + racun.getId();
             System.out.println(sql);
             stmt.executeUpdate(sql);
+            changeContent("racunovodja/racun.fxml");
 
-        } catch (SQLException e) {
+        } catch (SQLException | IOException e) {
             e.printStackTrace();
         }finally {
             if(myConn != null){
