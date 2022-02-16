@@ -5,8 +5,8 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TreeTableColumn?>
-<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -71,22 +71,20 @@
                         </Button>
                     </children>
                 </HBox>
-                <TreeTableView prefHeight="327.0" prefWidth="580.0">
-                    <columns>
-                        <TreeTableColumn prefWidth="55.0" text="ID Fakture" />
-                        <TreeTableColumn prefWidth="51.0" text="Tip" />
-                        <TreeTableColumn prefWidth="62.0" text="Dobavljač" />
-                        <TreeTableColumn prefWidth="71.0" text="Kupac" />
-                        <TreeTableColumn prefWidth="71.0" text="Klijent" />
-                        <TreeTableColumn prefWidth="45.0" text="Suma(PDV ukljucen)" />
-                        <TreeTableColumn prefWidth="74.0" text="Artikal" />
-                        <TreeTableColumn prefWidth="66.0" text="Kolicina" />
-                        <TreeTableColumn prefWidth="84.0" text="Datum" />
-                    </columns>
-                    <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                    </VBox.margin>
-                </TreeTableView>
+            <TableView fx:id="tvFaktura" prefHeight="313.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="tcId" prefWidth="30.399993896484375" text="Id" />
+                <TableColumn fx:id="tcKolicina" prefWidth="50.39996337890625" text="Kolicina" />
+                  <TableColumn fx:id="tcSuma" prefWidth="45.60003662109375" text="Suma" />
+                  <TableColumn fx:id="tcTipFakture" prefWidth="72.79998779296875" text="TipFakture" />
+                  <TableColumn fx:id="tcOpis" prefWidth="63.20001220703125" text="Opis" />
+                  <TableColumn fx:id="tcDatumKreiranja" prefWidth="94.39996337890625" text="DatumKreiranja" />
+                  <TableColumn fx:id="tcIdKlijenta" minWidth="8.79998779296875" prefWidth="60.79998779296875" text="IdKlijenta" />
+                  <TableColumn fx:id="tcTipUplate" minWidth="0.0" prefWidth="62.4000244140625" text="tipUplate" />
+                  <TableColumn fx:id="tcIdPDV" prefWidth="54.4000244140625" text="IdPDV" />
+                  <TableColumn fx:id="tcIdStavke" prefWidth="65.59991455078125" text="IdStvake" />
+              </columns>
+            </TableView>
             </children>
         </VBox>
         <HBox alignment="CENTER_LEFT" layoutY="440.0" prefHeight="60.0" prefWidth="600.0">
@@ -98,11 +96,6 @@
                     <font>
                         <Font name="Apple SD Gothic Neo Regular" size="13.0" />
                     </font>
-                </Button>
-                <Button fx:id="btDeleteFaktura" mnemonicParsing="false" onAction="#deleteFaktura" text="Obriši">
-                    <HBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                    </HBox.margin>
                 </Button>
             </children>
         </HBox>

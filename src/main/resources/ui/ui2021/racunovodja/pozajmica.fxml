@@ -3,31 +3,19 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.TreeTableColumn?>
-<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 
 <Pane fx:id="idRacunRacunovodja" prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.PozajmicaController">
     <children>
-        <TreeTableView layoutX="6.0" layoutY="92.0" prefHeight="282.0" prefWidth="586.0">
-            <columns>
-                <TreeTableColumn maxWidth="157.60003662109375" minWidth="-Infinity" prefWidth="73.5999755859375" text="ID" />
-                <TreeTableColumn prefWidth="98.0" text="principal" />
-                <TreeTableColumn prefWidth="122.0" text="interest" />
-                <TreeTableColumn prefWidth="124.0" text="datum" />
-                <TreeTableColumn prefWidth="167.0" text="opis" />
-            </columns>
-            <opaqueInsets>
-                <Insets />
-            </opaqueInsets>
-        </TreeTableView>
         <StackPane alignment="TOP_LEFT" layoutY="-2.0" prefHeight="94.0" prefWidth="592.0">
             <children>
                 <HBox prefHeight="100.0" prefWidth="200.0">
                     <children>
-                        <DatePicker prefHeight="26.0" prefWidth="130.0" promptText="Datum">
+                        <DatePicker fx:id="btDatumPretrazi" prefHeight="26.0" prefWidth="130.0" promptText="Datum">
                             <opaqueInsets>
                                 <Insets />
                             </opaqueInsets>
@@ -35,7 +23,7 @@
                                 <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                             </HBox.margin>
                         </DatePicker>
-                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="Pretraži">
+                        <Button fx:id="btPretrazi" mnemonicParsing="false" onAction="#filterPozajmica" prefHeight="26.0" prefWidth="66.0" text="Pretraži">
                             <HBox.margin>
                                 <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                             </HBox.margin>
@@ -52,5 +40,14 @@
         </StackPane>
         <Button fx:id="btAddPozajmica" layoutX="14.0" layoutY="384.0" mnemonicParsing="false" onAction="#addPozajmica" text="Dodaj pozajmicu" />
         <Button fx:id="btDeletePozajmica" layoutX="14.0" layoutY="453.0" mnemonicParsing="false" onAction="#deletePozajmica" text="Obriši pozajmicu" />
+      <TableView fx:id="tvPozajmica" layoutX="30.0" layoutY="85.0" prefHeight="273.0" prefWidth="540.0">
+        <columns>
+          <TableColumn fx:id="tcId" prefWidth="68.0" text="ID" />
+          <TableColumn fx:id="tcPrincipal" prefWidth="82.0" text="Principal" />
+            <TableColumn fx:id="tcInterest" prefWidth="127.0" text="Interest" />
+            <TableColumn fx:id="tcDatum" prefWidth="101.0" text="Datum" />
+            <TableColumn fx:id="tcOpis" prefWidth="161.0" text="Opis" />
+        </columns>
+      </TableView>
     </children>
 </Pane>

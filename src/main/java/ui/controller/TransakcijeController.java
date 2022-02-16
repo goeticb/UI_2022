@@ -17,6 +17,8 @@ import ui.ui2021.App;
 
 import java.io.IOException;
 import java.sql.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 public class TransakcijeController {
 
@@ -178,6 +180,51 @@ public class TransakcijeController {
                 int fakturaId = myRS.getInt("Faktura_idFaktura");
 
                 Transakcija transakcija = new Transakcija(id, date, suma, tipTransakcije, fakturaId);
+                list.add(transakcija);
+                tvTransakcija.setItems(list);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            if(myConn != null){
+                myConn.close();
+            }
+            if(myRS != null){
+                myRS.close();
+            }
+        }
+    }
+
+    public void filtrirajTransakcijuPoDatumu(String date) throws SQLException, ParseException {
+        ObservableList<Transakcija> list = FXCollections.observableArrayList();
+        String dbURL = "jdbc:mysql://localhost:3306/mydb";
+        String user = "root";
+        String pass = "root";
+
+        Connection myConn = null;
+        ResultSet myRS = null;
+        PreparedStatement p = null;
+
+        Date datum = (Date) new SimpleDateFormat("yyyy/MM/dd").parse(date);
+
+        try {
+            myConn = DriverManager.getConnection(dbURL, App.getUser(), App.getPass());
+            System.out.println("prosoTransakcija");
+            String sql = "select * from transakcija where datum = " + datum;
+            p = myConn.prepareStatement(sql);
+            myRS = p.executeQuery();
+
+            while(myRS.next()){
+
+                int id = myRS.getInt("idTransakcija");
+                Date date1 = myRS.getDate("datum");
+                System.out.println(date1);
+                int suma = myRS.getInt("suma");
+                String tipTransakcije = myRS.getString("tipTransakcije");
+                int fakturaId = myRS.getInt("Faktura_idFaktura");
+
+                Transakcija transakcija = new Transakcija(id, date1, suma, tipTransakcije, fakturaId);
                 list.add(transakcija);
                 tvTransakcija.setItems(list);
             }
