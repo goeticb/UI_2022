@@ -56,7 +56,7 @@
                                 <Insets right="15.0" top="5.0" />
                             </HBox.margin>
                         </TextField>
-                        <Button fx:id="btPretrazi" maxHeight="27.0" mnemonicParsing="false" text="Pretraži" textAlignment="CENTER">
+                        <Button fx:id="btPretrazi" maxHeight="27.0" mnemonicParsing="false" onAction="#searchKlijent" text="Pretraži" textAlignment="CENTER">
                             <HBox.margin>
                                 <Insets left="10.0" top="5.0" />
                             </HBox.margin>

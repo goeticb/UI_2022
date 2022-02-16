@@ -15,7 +15,7 @@
     <children>
         <VBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0">
             <children>
-                <HBox fx:id="dpDo" minHeight="50.0" minWidth="200.0">
+                <HBox minHeight="50.0" minWidth="200.0">
                     <children>
                         <Label alignment="CENTER" text="Od: " textAlignment="CENTER" textFill="WHITE">
                             <HBox.margin>
@@ -43,7 +43,7 @@
                                 <Insets right="15.0" top="5.0" />
                             </HBox.margin>
                         </DatePicker>
-                        <Button fx:id="btPretrazi" maxHeight="27.0" mnemonicParsing="false" text="Pretraži" textAlignment="CENTER">
+                        <Button fx:id="btPretrazi" maxHeight="27.0" mnemonicParsing="false" onAction="#searchTransakcije" text="Pretraži" textAlignment="CENTER">
                             <HBox.margin>
                                 <Insets left="20.0" top="5.0" />
                             </HBox.margin>
