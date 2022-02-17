@@ -262,7 +262,7 @@ public class AddFakturaController {
 
                 //CentarTroskova
                 int duguje = 0;
-                sql = "INSERT INTO CentarTroskovaDebit (potrazuje, duguje) VALUES (" + suma +", " +duguje + ")";
+                sql = "INSERT INTO CentarTroskovaDebit (potrazuje, duguje) VALUES (" + duguje +", " +suma + ")";
                 System.out.println(sql);
                 stmt = myConn.createStatement();
                 stmt.executeUpdate(sql);
