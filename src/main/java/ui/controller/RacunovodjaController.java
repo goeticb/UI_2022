@@ -49,6 +49,10 @@ public class RacunovodjaController {
         changeContent("racunovodja/konto.fxml");
     }
 
+    public void bilans(ActionEvent actionEvent) throws IOException {
+        changeContent("racunovodja/bilans.fxml");
+    }
+
     public void logOut(ActionEvent actionEvent) throws IOException {
         App.getInstance().changeScene("login.fxml");
     }
