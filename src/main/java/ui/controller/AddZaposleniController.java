@@ -107,10 +107,10 @@ public class AddZaposleniController {
 //                    "   END\n" +
 //                    "END";
 
-            /*sql = "INSERT INTO racunubanci (brojRacuna, imeBanke) \n" +
-                    "SELECT stuff for brojRacuna, stuff for imeBanke FROM DUAL \n" +
-                    "WHERE NOT EXISTS (SELECT * FROM `table` \n" +
-                    "      WHERE `value1`='stuff for value1' AND `value2`='stuff for value2' LIMIT 1) ";
+            sql = "INSERT INTO racunubanci (brojRacuna, imeBanke)\n" +
+                    "SELECT * FROM (SELECT "+brojRacuna+", '"+nazivBanke+"') AS tmp\n" +
+                    "WHERE NOT EXISTS (\n" +
+                    "    SELECT * FROM racunubanci WHERE brojRacuna = "+brojRacuna+" AND imeBanke = '"+nazivBanke+"'\n) LIMIT 1;";
             System.out.println(sql);
             stmt.executeUpdate(sql);
             sql = "SELECT * FROM racunubanci WHERE brojRacuna = " + brojRacuna + " and imeBanke = '" + nazivBanke + "'";
@@ -120,13 +120,13 @@ public class AddZaposleniController {
             int idRacunUBanci = 0;
             while(myRS.next()){
                 idRacunUBanci = myRS.getInt("idRacunUBanci");
-            }*/
+            }
 
             /**
              * kreiranje zaposlenog
              */
             sql = "INSERT INTO zaposleni (ime, prezime, jmbg, datumRodjenja, kontakt, email, TipZaposlenog_idTipZaposlenog, RacunUBanci_idRacunUBanci) " +
-                    "VALUES ('"+ ime +"', '"+ prezime +"', "+jmbg +", '"+ datumRodjenja + "', "+ kontakt + ", '" + email + "', " + idTipZaposlenog + ", " + 0 +")";
+                    "VALUES ('"+ ime +"', '"+ prezime +"', "+jmbg +", '"+ datumRodjenja + "', "+ kontakt + ", '" + email + "', " + idTipZaposlenog + ", " + idRacunUBanci +")";
             System.out.println(sql);
             stmt.executeUpdate(sql);
 

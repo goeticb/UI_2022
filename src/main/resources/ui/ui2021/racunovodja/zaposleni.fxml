@@ -1,83 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<Pane xmlns:fx="http://javafx.com/fxml/1" fx:id="idZaposneliPaneRacunovodja" prefHeight="516.0" prefWidth="600.0"
-      style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17"
-      fx:controller="ui.controller.ZaposleniController">
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<Pane fx:id="idZaposneliPaneRacunovodja" prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: #004455;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.ZaposleniController">
     <children>
-        <TreeTableView layoutX="6.0" layoutY="92.0" prefHeight="317.0" prefWidth="586.0">
-            <columns>
-                <TreeTableColumn maxWidth="157.60003662109375" minWidth="-Infinity" prefWidth="48.0" text="ID"/>
-                <TreeTableColumn minWidth="0.0" prefWidth="75.0" text="Ime"/>
-                <TreeTableColumn minWidth="0.0" prefWidth="91.0" text="Prezime"/>
-                <TreeTableColumn prefWidth="53.0" text="jmbg"/>
-                <TreeTableColumn prefWidth="106.0" text="datumRodjenja"/>
-                <TreeTableColumn prefWidth="87.0" text="kontakt"/>
-                <TreeTableColumn prefWidth="68.0" text="email"/>
-                <TreeTableColumn prefWidth="57.0" text="Zvanje"/>
-            </columns>
-            <opaqueInsets>
-                <Insets/>
-            </opaqueInsets>
-        </TreeTableView>
         <StackPane alignment="TOP_LEFT" layoutY="-2.0" prefHeight="94.0" prefWidth="592.0">
             <children>
                 <HBox prefHeight="100.0" prefWidth="200.0">
                     <children>
                         <ComboBox prefHeight="26.0" prefWidth="100.0" promptText="Name">
                             <HBox.margin>
-                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                             </HBox.margin>
                         </ComboBox>
                         <ComboBox prefHeight="26.0" prefWidth="91.0" promptText="Prezime">
                             <HBox.margin>
-                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                             </HBox.margin>
                         </ComboBox>
                         <ComboBox prefHeight="26.0" prefWidth="89.0" promptText="Jmbg">
                             <HBox.margin>
-                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                             </HBox.margin>
                         </ComboBox>
                         <DatePicker prefHeight="26.0" prefWidth="86.0" promptText="Datum rodjenja">
                             <HBox.margin>
-                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                             </HBox.margin>
                         </DatePicker>
                         <ComboBox prefHeight="26.0" prefWidth="90.0" promptText="Kontakt">
                             <HBox.margin>
-                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                             </HBox.margin>
                         </ComboBox>
                         <ComboBox prefHeight="26.0" prefWidth="86.0" promptText="Email">
                             <HBox.margin>
-                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                             </HBox.margin>
                         </ComboBox>
                         <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="Pretraži">
                             <HBox.margin>
-                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                             </HBox.margin>
                         </Button>
                     </children>
                 </HBox>
             </children>
             <opaqueInsets>
-                <Insets/>
+                <Insets />
             </opaqueInsets>
             <padding>
-                <Insets top="30.0"/>
+                <Insets top="30.0" />
             </padding>
         </StackPane>
-        <Button fx:id="btProjekatRacunovodja" layoutX="16.0" layoutY="418.0" mnemonicParsing="false"
-                onAction="#projekat" text="Projekat"/>
-        <Button fx:id="btAddZaposleni" layoutX="204.0" layoutY="418.0" mnemonicParsing="false" onAction="#addZaposleni"
-                text="Dodaj zaposlenog"/>
-        <Button fx:id="btDeleteZaposleni" layoutX="474.0" layoutY="418.0" mnemonicParsing="false"
-                onAction="#deleteZaposleni" prefHeight="26.0" prefWidth="112.0" text="Obriši zaposlenog"/>
-        <Button fx:id="btIzmeniZaposleni" layoutX="337.0" layoutY="418.0" mnemonicParsing="false"
-                onAction="#izmeniZaposleni" prefHeight="25.0" prefWidth="120.0" text="Izmeni zaposlenog"/>
+        <Button fx:id="btProjekatRacunovodja" layoutX="16.0" layoutY="418.0" mnemonicParsing="false" onAction="#projekat" text="Projekat" />
+        <Button fx:id="btAddZaposleni" layoutX="204.0" layoutY="418.0" mnemonicParsing="false" onAction="#addZaposleni" text="Dodaj zaposlenog" />
+        <Button fx:id="btDeleteZaposleni" layoutX="474.0" layoutY="418.0" mnemonicParsing="false" onAction="#deleteZaposleni" prefHeight="26.0" prefWidth="112.0" text="Obriši zaposlenog" />
+        <Button fx:id="btIzmeniZaposleni" layoutX="337.0" layoutY="418.0" mnemonicParsing="false" onAction="#izmeniZaposleni" prefHeight="25.0" prefWidth="120.0" text="Izmeni zaposlenog" />
+      <TableView fx:id="tvZaposleni" layoutX="16.0" layoutY="158.0" prefHeight="200.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="tcId" prefWidth="44.0" text="ID" />
+          <TableColumn fx:id="tcIme" prefWidth="69.0" text="Ime" />
+            <TableColumn fx:id="tcPrezime" prefWidth="82.0" text="Prezime" />
+            <TableColumn fx:id="tcJmbg" prefWidth="65.0" text="JMBG" />
+            <TableColumn fx:id="tcDatumRodjenja" prefWidth="98.0" text="Datum rodjenja" />
+            <TableColumn fx:id="tcKontakt" prefWidth="62.0" text="Kontakt" />
+            <TableColumn fx:id="tcEmail" prefWidth="65.0" text="Email" />
+            <TableColumn fx:id="tcZvanje" prefWidth="84.0" text="Zvanje" />
+        </columns>
+      </TableView>
     </children>
 </Pane>
