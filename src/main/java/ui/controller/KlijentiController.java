@@ -63,6 +63,7 @@ public class KlijentiController {
     private TextField tfRacun;
 
 
+
     @FXML
     public void initialize() {
         tcId.setCellValueFactory(new PropertyValueFactory("id"));
@@ -80,6 +81,83 @@ public class KlijentiController {
     public void addKlijent(ActionEvent actionEvent) throws IOException, SQLException {
 
         changeContent("racunovodja/addKlijent.fxml");
+    }
+
+    public void searchKlijent(ActionEvent actionEvent) throws IOException, SQLException {
+        ObservableList<Klijent> list = FXCollections.observableArrayList();
+        String dbURL = "jdbc:mysql://localhost:3306/mydb";
+        String user = "root";
+        String pass = "root";
+
+        Connection myConn = null;
+        ResultSet myRS = null;
+        PreparedStatement p = null;
+
+
+
+
+
+        try {
+            myConn = DriverManager.getConnection(dbURL, App.getUser(), App.getPass());
+            System.out.println("prosoKlijent");
+
+            String naziv = "", adresa = "", racun = "";
+            int flag = 0;
+
+            if (tfNaziv.getText() != "") {
+                flag++;
+                naziv = "nazivKlijenta like " + "\'" + tfNaziv.getText().toString() + "\'";
+            }
+            if (tfAdresa.getText() != "") {
+                flag++;
+                adresa = "adresaKlijenta like " + "\'" + tfAdresa.getText().toString() + "\'";
+            }
+            if (tfRacun.getText() != "") {
+                flag++;
+                racun = "racunKlijenta = " + tfRacun.getText().toString();
+            }
+            String query="select * from klijent";
+            if (flag == 1) {
+                query = "select * from klijent where " + naziv + adresa + racun;
+            } else if (flag == 2) {
+                if (tfNaziv.getText() == "")
+                    query = "select * from klijent where " + naziv + adresa + " and " + racun;
+                else
+                    query = "select * from klijent where " + naziv + " and " + adresa + racun;
+            } else if (flag == 3) {
+                query = "select * from klijent where " + naziv + " and " + adresa + " and " + racun;
+            }
+            System.out.println(naziv);
+            System.out.println(racun);
+            System.out.println(adresa);
+            System.out.println(query);
+            p = myConn.prepareStatement(query);
+            myRS = p.executeQuery();
+            int c = 0;
+            while (myRS.next()) {
+                //System.out.println("KLIJENT");
+                c = 1;
+                int id = myRS.getInt("idDobavljac");
+                String nazivKlijenta = myRS.getString("nazivKlijenta");
+                String adresaKlijenta = myRS.getString("adresaKlijenta");
+                int racunKlijnta = myRS.getInt("racunKlijenta");
+
+                Klijent klijent = new Klijent(id, nazivKlijenta, adresaKlijenta, racunKlijnta);
+                list.add(klijent);
+                tvKlijent.setItems(list);
+            }
+            if(c==0) tvKlijent.setItems(null);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (myConn != null) {
+                myConn.close();
+            }
+            if (myRS != null) {
+                myRS.close();
+            }
+        }
+        // changeContent("racunovodja/searchKlijent.fxml");
     }
 
     public void izmeniKlijenta(ActionEvent actionEvent) throws IOException {
@@ -105,8 +183,8 @@ public class KlijentiController {
 
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
-            if(myConn != null){
+        } finally {
+            if (myConn != null) {
                 myConn.close();
             }
         }
@@ -119,6 +197,7 @@ public class KlijentiController {
         idKlijentiPane.getChildren().removeAll();
         idKlijentiPane.getChildren().addAll((root));
     }
+
     private void ucitajKlijente() throws SQLException {
         ObservableList<Klijent> list = FXCollections.observableArrayList();
         String dbURL = "jdbc:mysql://localhost:3306/mydb";
@@ -136,7 +215,7 @@ public class KlijentiController {
             p = myConn.prepareStatement(sql);
             myRS = p.executeQuery();
 
-            while(myRS.next()){
+            while (myRS.next()) {
                 //System.out.println("KLIJENT");
 
                 int id = myRS.getInt("idDobavljac");
@@ -151,101 +230,13 @@ public class KlijentiController {
 
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
-            if(myConn != null){
+        } finally {
+            if (myConn != null) {
                 myConn.close();
             }
-            if(myRS != null){
+            if (myRS != null) {
                 myRS.close();
             }
         }
-
     }
-
-    public void filtrirajKlijentaPoImenu(String naziv) throws SQLException {
-        ObservableList<Klijent> list = FXCollections.observableArrayList();
-        String dbURL = "jdbc:mysql://localhost:3306/mydb";
-        String user = "root";
-        String pass = "root";
-
-        Connection myConn = null;
-        ResultSet myRS = null;
-        PreparedStatement p = null;
-
-        try {
-            myConn = DriverManager.getConnection(dbURL, App.getUser(), App.getPass());
-            System.out.println("prosoKlijent");
-            String sql = "select * from klijent where nazivKlijenta = " + naziv;
-            p = myConn.prepareStatement(sql);
-            myRS = p.executeQuery();
-
-            while(myRS.next()){
-                //System.out.println("KLIJENT");
-
-                int id = myRS.getInt("idDobavljac");
-                String nazivKlijenta = myRS.getString("nazivKlijenta");
-                String adresaKlijenta = myRS.getString("adresaKlijenta");
-                int racunKlijnta = myRS.getInt("racunKlijenta");
-
-                Klijent klijent = new Klijent(id, nazivKlijenta, adresaKlijenta, racunKlijnta);
-                list.add(klijent);
-                tvKlijent.setItems(list);
-            }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }finally {
-            if(myConn != null){
-                myConn.close();
-            }
-            if(myRS != null){
-                myRS.close();
-            }
-        }
-
-    }
-
-    public void filtrirajKlijentaPoAdresi(String adresa) throws SQLException {
-        ObservableList<Klijent> list = FXCollections.observableArrayList();
-        String dbURL = "jdbc:mysql://localhost:3306/mydb";
-        String user = "root";
-        String pass = "root";
-
-        Connection myConn = null;
-        ResultSet myRS = null;
-        PreparedStatement p = null;
-
-        try {
-            myConn = DriverManager.getConnection(dbURL, App.getUser(), App.getPass());
-            System.out.println("prosoKlijent");
-            String sql = "select * from klijent where adresaKlijenta = " + adresa;
-            p = myConn.prepareStatement(sql);
-            myRS = p.executeQuery();
-
-            while(myRS.next()){
-                //System.out.println("KLIJENT");
-
-                int id = myRS.getInt("idDobavljac");
-                String nazivKlijenta = myRS.getString("nazivKlijenta");
-                String adresaKlijenta = myRS.getString("adresaKlijenta");
-                int racunKlijnta = myRS.getInt("racunKlijenta");
-
-                Klijent klijent = new Klijent(id, nazivKlijenta, adresaKlijenta, racunKlijnta);
-                list.add(klijent);
-                tvKlijent.setItems(list);
-            }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }finally {
-            if(myConn != null){
-                myConn.close();
-            }
-            if(myRS != null){
-                myRS.close();
-            }
-        }
-
-    }
-
 }

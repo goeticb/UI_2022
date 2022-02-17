@@ -6,9 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import ui.model.Faktura;
@@ -22,7 +20,14 @@ public class FakturaController {
 
     @FXML
     private Pane idFakturaRacunovodjaPane;
-
+    @FXML
+    private DatePicker dpOd;
+    @FXML
+    private DatePicker dpDo;
+    @FXML
+    private Button btnPretrazi;
+    @FXML
+    private TextField tip;
     @FXML
     private Button btAddFaktura;
 
@@ -94,7 +99,90 @@ public class FakturaController {
     public void deleteFaktura(ActionEvent actionEvent) throws SQLException {
 
     }
+    public void pretraziFaktura(ActionEvent actionEvent) throws SQLException, SQLException {
+            ObservableList<Faktura> list = FXCollections.observableArrayList();
+            String dbURL = "jdbc:mysql://localhost:3306/mydb";
+            String user = "root";
+            String pass = "root";
 
+            Connection myConn = null;
+            ResultSet myRS = null;
+            PreparedStatement p = null;
+
+            try {
+                myConn = DriverManager.getConnection(dbURL, App.getUser(), App.getPass());
+                System.out.println("prosoFaktura");
+                String sql;
+
+                int flag = 0;
+                String tipS="", Od="", Do="";
+                if(!tip.getText().isEmpty()){
+                    flag++;
+                    tipS ="tipFakture like \'" + tip.getText().toString() + "\'";
+                }
+                if(!(dpOd.getValue() == null)){
+                    flag++;
+                    Od = " datumKreiranja >= \'" + dpOd.getValue().toString() +"\'";
+                }
+                if (!(dpDo.getValue()==null)){
+                    flag++;
+                    Do = " datumKreiranja <= \'" + dpDo.getValue().toString() +"\'";
+                }
+
+                 if (!tip.getText().isEmpty() && dpDo.getValue() == null && dpOd.getValue()==null)
+                    sql = "select * from faktura where "+ tipS;
+                else if (!tip.getText().isEmpty() && dpDo.getValue() != null && dpOd.getValue()==null)
+                    sql = "select * from faktura where "+ tipS + " and " + Do;
+                else if (!tip.getText().isEmpty() && dpDo.getValue() == null && dpOd.getValue()!=null)
+                    sql = "select * from faktura where "+ tipS + " and " + Od;
+                else if(!tip.getText().isEmpty() && dpDo.getValue() != null && dpOd.getValue()!=null)
+                    sql = "select * from faktura where "+ tipS + " and " + Od + " and " + Do;
+                else if (tip.getText().isEmpty() && dpDo.getValue() != null && dpOd.getValue()!=null)
+                    sql = "select * from faktura where "+ Od + " and " + Do;
+                else if (tip.getText().isEmpty() && dpDo.getValue() == null && dpOd.getValue()!=null)
+                    sql = "select * from faktura where "+ Od;
+                else if (tip.getText().isEmpty() && dpDo.getValue() != null && dpOd.getValue()==null)
+                    sql = "select * from faktura where "+ Do;
+                else
+                    sql = "select * from faktura";
+                System.out.println(sql);
+                p = myConn.prepareStatement(sql);
+                myRS = p.executeQuery();
+                int c = 0;
+                // datePickeri iz nekog razloga ne setuju svoju vrednost na null kada obrisem datum iz istih,
+                // vec zapamti prethodno uneti
+                //dpOd.setValue(null);
+                //dpDo.setValue(null);
+                while(myRS.next()){
+                    System.out.println("KLIJENT");
+                    c=1;
+                    int id = myRS.getInt("idFaktura");
+                    int kolicina = myRS.getInt("kolicina");
+                    int suma = myRS.getInt("suma");
+                    String tipFakture = myRS.getString("tipFakture");
+                    String opis = myRS.getString("opis");
+                    Date date = myRS.getDate("datumKreiranja");
+                    int idKlijent = myRS.getInt("Klijent_idKlijent");
+                    String uplatilac = myRS.getString("Uplatilac_Primalac");
+                    int pdv = myRS.getInt("PDV_idPDV");
+                    int stavka = myRS.getInt("Stavka_idStavka");
+
+                    Faktura faktura = new Faktura(id, kolicina, suma, tipFakture, opis, date, idKlijent, uplatilac,pdv,stavka);
+                    list.add(faktura);
+                    tvFaktura.setItems(list);
+                }
+                if (c==0) tvFaktura.setItems(null);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }finally {
+                if(myConn != null){
+                    myConn.close();
+                }
+                if(myRS != null){
+                    myRS.close();
+                }
+            }
+    }
 
     public void changeContent(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));

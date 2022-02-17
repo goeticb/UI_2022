@@ -6,10 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import ui.model.Klijent;
@@ -38,13 +35,10 @@ public class RacunController {
     private Button btnPretrazi;
 
     @FXML
-    private ComboBox cbBrojRacuna;
+    private TextField tfBrojRacuna;
 
     @FXML
-    private ComboBox cbId;
-
-    @FXML
-    private ComboBox cbImeBanke;
+    private TextField tfImeBanke;
 
     @FXML
     private Pane idRacunRacunovodja;
@@ -86,7 +80,62 @@ public class RacunController {
     public void izmeniRacun(ActionEvent actionEvent) throws IOException {
         changeContent("racunovodja/izmeniRacun.fxml");
     }
+    public void pretraziRacun(ActionEvent actionEvent) throws IOException, SQLException {
 
+            ObservableList<Racun> list = FXCollections.observableArrayList();
+            String dbURL = "jdbc:mysql://localhost:3306/mydb";
+            String user = "root";
+            String pass = "root";
+
+            Connection myConn = null;
+            ResultSet myRS = null;
+            PreparedStatement p = null;
+
+            try {
+                myConn = DriverManager.getConnection(dbURL, App.getUser(), App.getPass());
+                System.out.println("prosoKlijent");
+                String sql;
+
+                if(tfBrojRacuna.getText().isEmpty() && tfImeBanke.getText().isEmpty())
+                    sql = "select * from racunubanci";
+                else if(!tfBrojRacuna.getText().isEmpty() && tfImeBanke.getText().isEmpty())
+                    sql = "select * from racunubanci where brojRacuna like \'"+tfBrojRacuna.getText().toString()
+                            + "\'";
+                else if (tfBrojRacuna.getText().isEmpty() && !tfImeBanke.getText().isEmpty())
+                    sql = "select * from racunubanci where imeBanke like \'"+tfImeBanke.getText().toString()
+                            + "\'";
+                else
+                    sql = "select * from racunubanci where brojRacuna like \'"+tfBrojRacuna.getText().toString()
+                            + "\' and imeBanke like \'"+tfImeBanke.getText().toString() +"\'";
+                System.out.println(sql);
+                p = myConn.prepareStatement(sql);
+                myRS = p.executeQuery();
+                int c = 0;
+                while(myRS.next()){
+                    //System.out.println("KLIJENT");
+                    c=1;
+                    int id = myRS.getInt("idRacunUBanci");
+                    String imeBanke = myRS.getString("imeBanke");
+                    int brojRacuna = myRS.getInt("brojRacuna");
+
+                    Racun racun = new Racun(id,brojRacuna,imeBanke);
+                    System.out.println(racun.getBroj());
+                    list.add(racun);
+                    tvRacun.setItems(list);
+                }
+                if(c==0) tvRacun.setItems(null);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }finally {
+                if(myConn != null){
+                    myConn.close();
+                }
+                if(myRS != null){
+                    myRS.close();
+                }
+            }
+
+    }
     public void deleteRacun(ActionEvent actionEvent) throws SQLException {
         Racun racun = tvRacun.getSelectionModel().getSelectedItem();
         //System.out.println(klijent.getId());
