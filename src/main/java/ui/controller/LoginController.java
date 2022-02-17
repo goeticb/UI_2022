@@ -31,7 +31,7 @@ public class LoginController {
             System.out.println("USOAO OVDE");
             App.getInstance().changeScene("klijent/klijent.fxml");
         }
-        if (username.getText().equals("") && password.getText().equals("")) {
+        if (username.getText().equals("racunovodja") && password.getText().equals("123")) {
             App.getInstance().changeScene("racunovodja/racunovodja.fxml");
         } else if (username.getText().isEmpty() && password.getText().isEmpty()) {
             wrongLogIn.setText("Please enter your data.");
