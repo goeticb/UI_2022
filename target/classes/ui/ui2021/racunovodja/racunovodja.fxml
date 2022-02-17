@@ -31,7 +31,7 @@
                                 <Font name="AppleGothic Regular" size="20.0" />
                             </font>
                             <VBox.margin>
-                                <Insets bottom="40.0" left="20.0" right="20.0" top="10.0" />
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="5.0" />
                             </VBox.margin>
                         </Label>
                         <Button fx:id="btTranskacije" contentDisplay="CENTER" mnemonicParsing="false" onAction="#transkacije" style="-fx-background-color: transparent;" text="Transakcije" textAlignment="CENTER" textFill="WHITE">
@@ -39,7 +39,7 @@
                                 <Font name="AppleGothic Regular" size="20.0" />
                             </font>
                             <VBox.margin>
-                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                <Insets bottom="5.0" left="5.0" right="5.0" />
                             </VBox.margin>
                         </Button>
                         <Button fx:id="btFaktura" contentDisplay="CENTER" mnemonicParsing="false" onAction="#faktura" style="-fx-background-color: transparent;" text="Fakture" textAlignment="CENTER" textFill="WHITE">
@@ -47,12 +47,12 @@
                                 <Font name="AppleGothic Regular" size="20.0" />
                             </font>
                             <VBox.margin>
-                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                <Insets bottom="5.0" left="5.0" right="5.0" />
                             </VBox.margin>
                         </Button>
                         <Button fx:id="btZaposleniRacunovodja" contentDisplay="CENTER" mnemonicParsing="false" onAction="#zaposleniRacunovodja" style="-fx-background-color: transparent;" text="Zaposleni" textAlignment="CENTER" textFill="WHITE">
                             <VBox.margin>
-                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                <Insets bottom="5.0" left="5.0" right="5.0" />
                             </VBox.margin>
                             <font>
                                 <Font name="AppleGothic Regular" size="20.0" />
@@ -62,13 +62,16 @@
                      <font>
                         <Font name="AppleGothic Regular" size="20.0" />
                      </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
                   </Button>
                         <Button fx:id="btKlijenti" mnemonicParsing="false" onAction="#klijenti" style="-fx-background-color: transparent;" text="Klijenti" textFill="WHITE">
                             <font>
                                 <Font name="AppleGothic Regular" size="20.0" />
                             </font>
                             <VBox.margin>
-                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                <Insets bottom="5.0" left="5.0" right="5.0" />
                             </VBox.margin>
                         </Button>
                         <Button fx:id="btRacun" contentDisplay="CENTER" mnemonicParsing="false" onAction="#racun" style="-fx-background-color: transparent;" text="Račun" textAlignment="CENTER" textFill="WHITE">
@@ -76,15 +79,20 @@
                                 <Font name="AppleGothic Regular" size="20.0" />
                             </font>
                             <VBox.margin>
-                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                <Insets bottom="5.0" left="5.0" right="5.0" />
                             </VBox.margin>
                         </Button>
+                  <Button fx:id="btBilans" contentDisplay="CENTER" mnemonicParsing="false" onAction="#bilans" style="-fx-background-color: transparent;" text="Bilans" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="AppleGothic Regular" size="20.0" />
+                     </font>
+                  </Button>
                         <Button fx:id="idLogOut" alignment="CENTER" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: transparent;" text="Log Out" textAlignment="CENTER" textFill="WHITE">
                             <font>
                                 <Font name="AppleGothic Regular" size="14.0" />
                             </font>
                             <VBox.margin>
-                                <Insets bottom="20.0" left="20.0" right="20.0" top="30.0" />
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                             </VBox.margin>
                         </Button>
                     </children>
