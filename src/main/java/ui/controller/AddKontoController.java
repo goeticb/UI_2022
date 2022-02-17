@@ -39,7 +39,7 @@ public class AddKontoController {
 
         try {
             myConn = DriverManager.getConnection(dbURL, App.getUser(), App.getPass());
-            System.out.println("prosoAddKlijent");
+            System.out.println("prosoAddKonto");
             Statement stmt = myConn.createStatement();
             String sql = "SELECT * FROM nalog";
             stmt = myConn.createStatement();
@@ -47,6 +47,7 @@ public class AddKontoController {
             int nalogId = 0;
             while (myRS.next()) {
                 int temp = myRS.getInt("idNalog");
+                System.out.println("NALOG" + temp);
                 nalogId = temp;
             }
              sql = "SELECT * FROM transakcija";
@@ -76,6 +77,7 @@ public class AddKontoController {
                 x="duguje";
 
             if(tfSifra.getText().length()==3){
+                System.out.println("uslo ovde za konto = 3");
                     sql = "INSERT INTO konto (sifra, ime, A_P_R_P,"+x+") VALUES" + "(" + tfSifra.getText().charAt(0) + ",'" + tfIme.getText() + "'" + ",'" + tfAPRP.getText() + "'," + suma + ")";
                     System.out.println("prvi");
                     System.out.println(sql);

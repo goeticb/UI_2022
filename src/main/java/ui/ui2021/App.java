@@ -13,7 +13,7 @@ public class App extends Application {
     private static Stage stage;
     private static App instance = null;
     private static String user = "root";
-    private static String pass = "";
+    private static String pass = "root";
     //private static Connection myConn;
 
     public static App getInstance() {

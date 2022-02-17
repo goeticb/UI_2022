@@ -250,20 +250,55 @@ public class AddFakturaController {
                 System.out.println(sql);
                 stmt = myConn.createStatement();
                 stmt.executeUpdate(sql);
-                /*
-                zavrsiti!!!!
+
+                sql = "SELECT * FROM nalog";
+                stmt = myConn.createStatement();
+                myRS = stmt.executeQuery(sql);
+                int nalogId = 0;
+                while (myRS.next()) {
+                    int temp = myRS.getInt("idNalog");
+                    nalogId = temp;
+                }
+
+                //CentarTroskova
+                int duguje = 0;
+                sql = "INSERT INTO CentarTroskovaDebit (potrazuje, duguje) VALUES (" + suma +", " +duguje + ")";
+                System.out.println(sql);
+                stmt = myConn.createStatement();
+                stmt.executeUpdate(sql);
+
+                sql = "SELECT * FROM CentarTroskovaDebit";
+                stmt = myConn.createStatement();
+                myRS = stmt.executeQuery(sql);
+                int centarTroskovaDebitId = 0;
+                while (myRS.next()) {
+                    int temp = myRS.getInt("idCentarTroskovaDebit");
+                    centarTroskovaDebitId = temp;
+                }
+                sql = "INSERT INTO CentarTroskovaDebit_has_Nalog (CentarTroskovaDebit_idCentarTroskovaDebit,Nalog_idNalog) VALUES" + "(" + centarTroskovaDebitId + "," + nalogId +")";
+                stmt = myConn.createStatement();
+                stmt.executeUpdate(sql);
+
                 if(rbUplata.isSelected()){
                     //obican centar troskova
-                    sql = "INSERT INTO centratTroskova (potrazuje, naziv) VALUES (+ suma +)";
+                    sql = "INSERT INTO CentarTroskova (potrazuje) VALUES (" + suma +")";
                     System.out.println(sql);
                     stmt = myConn.createStatement();
                     stmt.executeUpdate(sql);
-                }
-                else {
-                    //debit punis duguje
 
+                    sql = "SELECT * FROM CentarTroskova";
+                    stmt = myConn.createStatement();
+                    myRS = stmt.executeQuery(sql);
+                    int centarTroskovaId = 0;
+                    while (myRS.next()) {
+                        int temp = myRS.getInt("idCentarTroskova");
+                        centarTroskovaId = temp;
+                    }
+                    sql = "INSERT INTO CentarTroskova_has_Nalog (CentarTroskova_idCentarTroskova,Nalog_idNalog) VALUES" + "(" + centarTroskovaId + "," + nalogId +")";
+                    stmt = myConn.createStatement();
+                    stmt.executeUpdate(sql);
                 }
-                */
+
 
 
 
